@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 
-import User from '../models/user.js'
+import User from '../models/users.js'
 
 //what does this do exactly????????
 const SALT_ROUNDS = process.env.SALT_ROUNDS || 11
