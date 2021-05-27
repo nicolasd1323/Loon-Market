@@ -1,4 +1,5 @@
 # Loon-Market
+
 # Project Overview
 
 ## Project Description
@@ -13,6 +14,7 @@ https://whimsical.com/loon-market-Vp1nz8484xYdpgvJ6zQDUW
 ## Schema Sample
 
 Schema for Vendor (originally seeded as well as created by user)
+
 ```
 const Vendor = new Schema(
   {
@@ -24,6 +26,7 @@ const Vendor = new Schema(
   { timestamps: true }
 )
 ```
+
 
 Schema for User sign-in (required to add vendor, as well as edit and delete)
 ```
@@ -40,6 +43,7 @@ const User = new Schema(
 )
 ```
 
+
 ### MVP/PostMVP
 
 #### MVP 
@@ -54,4 +58,5 @@ const User = new Schema(
 -Include a sort option.<br>
 -Include menues for each vendor.<br>
 -Include a rating system to reviews.<br>
+
 
