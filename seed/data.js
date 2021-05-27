@@ -80,7 +80,7 @@ const insertData = async () => {
       imgURL:
         "https://images.unsplash.com/photo-1524587253133-266042ff67d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80",
       description:
-        "Wlecome, fellow Loons!  Our mission, at Tapped Out, is to make high quality locally brewed craft beer that makes a positive impact on our customers and our community. Our warm inviting tasting room is open daily. Stop by and have a pint. Cheers! ",
+        "Welcome, fellow Loons!  Our mission, at Tapped Out, is to make high quality locally brewed craft beer that makes a positive impact on our customers and our community. Our warm inviting tasting room is open daily. Stop by and have a pint. Cheers! ",
       hours:
         "Mon - Wed  11 am - 9 pm  |  Thurs - Sat  11 am - 12 am  |  Sun 12 pm - 6 pm",
     }
