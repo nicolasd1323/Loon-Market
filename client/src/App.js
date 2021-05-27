@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react'
+import './App.css'
+import Home from './screens/Home/Home'
+import Vendors from './screens/Vendors/Vendors'
+import VendorCreate from './screens/VendorCreate/VendorCreate'
+import VendorEdit from './screens/VendorEdit/VendorEdit'
+import VendorDetail from './screens/VendorDetail/VendorDetail'
+import { Route, Switch, Redirect } from 'react-router-dom'
+import { verifyUser } from './services/users'
+import SignUp from './screens/SignUp/SignUp'
+import SignIn from './screens/SignIn/SignIn'
+import SignOut from './screens/SignOut/SignOut'
 
-function App() {
+const App = () => {
+  const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const user = await verifyUser()
+      user ? setUser(user) : setUser(null)
+    }
+    fetchUser()
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Switch>
+        <Route exact path="/">
+          <Home user={user} />
+        </Route>
+        <Route path="/sign-up">
+          <SignUp setUser={setUser} />
+        </Route>
+        <Route path="/sign-in">
+          <SignIn setUser={setUser} />
+        </Route>
+        <Route path="/sign-out">
+          <SignOut setUser={setUser} />
+        </Route>
+        <Route exact path="/vendors">
+          <Vendors user={user} />
+        </Route>
+        <Route path="/add-vendor">
+          {user ? <VendorCreate user={user} /> : <Redirect to="/sign-up" />}
+        </Route>
+        <Route exact path="/vendors/:id/edit">
+          {user ? <VendorEdit user={user} /> : <Redirect to='/' />}
+        </Route>
+        <Route exact path="/vendors/:id">
+          <VenderDetail user={user} />
+        </Route>
+      </Switch>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
