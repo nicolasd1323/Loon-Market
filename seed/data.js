@@ -1,92 +1,97 @@
-import db from '../db/connection.js'
-import Vendor from '../models/vendor.js'
-import User from '../models/user.js'
-import bcrypt from 'bcrypt'
+import db from "../db/connection.js";
+import Vendor from "../models/vendor.js";
+import User from "../models/user.js";
+import bcrypt from "bcrypt";
 
 const insertData = async () => {
   // reset database
-  await db.dropDatabase()
+  await db.dropDatabase();
 
   const user1 = new User({
-    username: 'carrianne',
-    email: 'chamer79@gmail.com',
-    password_digest: await bcrypt.hash('C0mp0$t', 11)
-  })
-  await user1.save()
+    username: "carrianne",
+    email: "chamer79@gmail.com",
+    password_digest: await bcrypt.hash("C0mp0$t", 11),
+  });
+  await user1.save();
 
   const user2 = new User({
-    username: 'nicholas',
-    email: 'nicolasd1323@gmail.com',
-    password_digest: await bcrypt.hash('!$h0pp3R2', 11)
-  })
-  await user2.save()
+    username: "nicholas",
+    email: "nicolasd1323@gmail.com",
+    password_digest: await bcrypt.hash("!$h0pp3R2", 11),
+  });
+  await user2.save();
 
   const user3 = new User({
-    username: 'james',
-    email: 'jwbenet@gmail.com',
-    password_digest: await bcrypt.hash('!turkey', 11)
-  })
-  await user3.save()
-
+    username: "james",
+    email: "jwbenet@gmail.com",
+    password_digest: await bcrypt.hash("!turkey", 11),
+  });
+  await user3.save();
 
   // vendors data that we want inserted into database
   const vendors = [
     {
-      name: 'Product 001',
+      name: "Farggi Ice Cream Parlor",
       imgURL:
-        'https://images.unsplash.com/photo-1573521193826-58c7dc2e13e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        "https://images.unsplash.com/photo-1591261730587-6901c2b24b76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      hours: '130'
+        "Figgos’s Ice Cream Parlor brings you a wide spectrum of flavors for all ages. From the classic Banana Split Sunday to wacky and wild Elvis' Hey Mama' Shake - peanut butter, brownie bits, and candied cayenne bacon.  We source our dairy from Moe’s Moo Milk Dairy Farm. As well as sourcing a plethora of our seasonal infregdients from local farms.",
+      hours:
+        "Mon - Wed 11 pm - 8 pm  |  Thurs-Sat 11 am - 11 pm  | Sun: 12 pm - 6 pm",
     },
     {
-      name: 'Product 002',
+      name: "Tasos",
       imgURL:
-        'https://images.unsplash.com/photo-1576594496020-534bf2437b21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        "https://images.unsplash.com/photo-1599173687303-7e1eb50f1e60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      hours: '100'
+        "Our ancient Greek cuisine is characterized by its frugality and was founded on the 'Mediterranean Triad': wheat, olive oil, and wine, with meat being rarely eaten and fish being more common. Come try us!!",
+      hours:
+        "Mon - Wed 11 pm - 8 pm  |  Thurs-Sat 11 am - 11 pm  |  Sun: 12 pm - 6 pm",
     },
     {
-      name: 'Product 003',
+      name: "Toro Loco",
       imgURL:
-        'https://i.ibb.co/XkKm1pM/assorted-color-paint-brush-stroke-1672850.jpg',
+        "https://images.unsplash.com/photo-1560717844-57e41a5e4758?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      hours: '140'
+        "We offer a wide variety of tapas and entrees with a special Sunday bruch featuring unlimited house Bloody Mary's. One recent addition to the menu has been quite popular -- zarajos-- fried lamb intestines wrapped around a stick. We welcome new Lune Cove resident and Chef Manuel Garcia Lorena, from one of Barcelona's most acclaimed restaurant's: Plaza Catalunya. Let him plan the next meal for you and your group!",
+      hours:
+        "Mon - Wed  11 am - 9 pm  |  Thurs - Sat  11 am - 12 am  |  Sun 12 pm - 5 pm",
     },
     {
-      name: 'Product 004',
+      name: "Veggie House",
       imgURL:
-        'https://images.unsplash.com/photo-1580380853934-834251ec0e95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHZlZ2dpZSUyMGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      hours: '168'
+        "Our Vegetarian cuisine is based on food that meets vegetarian standards. We include dairy products but not eggs, and ovo vegetarianism encompasses eggs but not dairy products. Come try us!!",
+      hours:
+        "Mon - Wed  11 am - 9 pm  |  Thurs - Sat  11 am - 12 am  |  Sun 12 pm - 5 pm",
     },
     {
-      name: 'Product 005',
+      name: "Balzac's Coffee",
       imgURL:
-        'https://images.unsplash.com/photo-1531826338556-162edb086560?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60',
+        "https://images.unsplash.com/photo-1549996647-190b679b33d7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      hours: '110'
+        "From the sunny slopes of the Colombian Andes to cafes throughtout North America and Europe, Balzac's quality espresso beans will stimulate your mind and body.",
+      hours:
+        "Mon - Wed  11 am - 9 pm  |  Thurs - Sat  11 am - 12 am  |  Sun 12 pm - 5 pm",
     },
     {
-      name: 'Product 006',
+      name: "Tapped Out Brewery",
       imgURL:
-        'https://i.ibb.co/bJrPBSQ/steve-johnson-n-WYz-Sj-Ac0e-E-unsplash-Cropped.jpg',
+        "https://images.unsplash.com/photo-1524587253133-266042ff67d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80",
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      hours: '130'
-    }
-  ]
+        "Wlecome, fellow Loons!  Our mission, at Tapped Out, is to make high quality locally brewed craft beer that makes a positive impact on our customers and our community. Our warm inviting tasting room is open daily. Stop by and have a pint. Cheers! ",
+      hours:
+        "Mon - Wed  11 am - 9 pm  |  Thurs - Sat  11 am - 12 am  |  Sun 12 pm - 6 pm",
+    },
+  ];
 
   // insert vendors into database
-  await Vendor.insertMany(vendors)
-  console.log('Created users & vendors!')
+  await Vendor.insertMany(vendors);
+  console.log("Created users & vendors!");
 
   // close database connection. done.
-  db.close()
-}
+  db.close();
+};
 
-insertData()
+insertData();
