@@ -58,9 +58,9 @@ https://github.com/nicolasd1323/Loon-Market/projects/1?add_cards_query=is%3Aopen
 
 #### PostMVP  
 
+-dropdown menu(s) to provide multiple options for vendor hours input<br>
 -User leaves reviews.<br>
--Include a search bar.<br>
--Include a sort option.<br>
+-Sort/Filter by cuisine <br>
 -Include menues for each vendor.<br>
 -Add shopping cart <br>
 -Incorporate a rating system to reviews.<br>
