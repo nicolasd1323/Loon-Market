@@ -1,6 +1,6 @@
 import "./SignUp.css";
 import { useState } from "react";
-import { signUp } from "../..services/users.js";
+import { signUp } from "../..services/users";
 import { useHistory } from "react-router-dom";
 
 const SignUp = (props) => {
