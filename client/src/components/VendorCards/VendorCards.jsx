@@ -29,7 +29,7 @@ const VendorCards = () => {
 
   return (
     <div className='vendor-cards'>
-      <div className='latest'>LATEST</div>
+      <div className='latest'><h3>Current Vendors</h3></div>
       <div className='cards'>{CARDS}</div>
     </div>
   )
