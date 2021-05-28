@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './VendorCreate.css'
-import { Layout } from '../../components'
+import { Layout } from '../../components/Layout/Layout'
 import { Redirect } from 'react-router-dom'
 import { createVendor } from '../../services/vendors'
 

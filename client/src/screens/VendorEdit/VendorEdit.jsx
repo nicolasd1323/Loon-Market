@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './VendorEdit.css'
 import { useParams, Redirect } from 'react-router-dom'
-import { Layout } from '../../components'
+import { Layout } from '../../components/Layout/Layout'
 import { getVendor, updateVendor } from '../../services/vendors'
 
 const VendorEdit = (props) => {
