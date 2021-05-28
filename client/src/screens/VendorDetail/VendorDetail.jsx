@@ -42,7 +42,6 @@ const VendorDetail = (props) => {
               className='delete-button'
               onClick={() => deleteVendor(vendor._id)}
             >
-            
               Delete
               </Link>
           </div>
