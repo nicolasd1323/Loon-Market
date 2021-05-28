@@ -7,12 +7,12 @@ const SignUp = (props) => {
   const history = useHistory();
 
   const [form, setForm] = useState({
-    username: "",
-    email: "",
-    password: "",
-    passwordConfirmation: "",
+    username: '',
+    email: '',
+    password: '',
+    passwordConfirmation: '',
     isError: false,
-    errorMsg: "",
+    errorMsg: "Sign Up Details Invalid",
   });
 
   const handleChange = (event) =>
@@ -31,10 +31,10 @@ const SignUp = (props) => {
     } catch (error) {
       console.error(error);
       setForm({
-        username: "",
-        email: "",
-        password: "",
-        passwordConfirmation: "",
+        username: '',
+        email: '',
+        password: '',
+        passwordConfirmation: '',
         isError: true,
         errorMsg: "Sign Up Details Invalid",
       });
@@ -42,7 +42,7 @@ const SignUp = (props) => {
   };
 
   const renderError = () => {
-    const toggleForm = form.isError ? "danger" : "";
+    const toggleForm = form.isError ? "danger" : ''
     if (form.isError) {
       return (
         <button type="submit" className={toggleForm}>
@@ -68,7 +68,7 @@ const SignUp = (props) => {
           name="username"
           value={username}
           placeholder="Enter Username"
-          onCHange={handleChange}
+          onChange={handleChange}
         />
         <label>Email Address</label>
         <input
@@ -77,7 +77,7 @@ const SignUp = (props) => {
           name="email"
           value={email}
           placeholder="Enter Email"
-          onCHange={handleChange}
+          onChange={handleChange}
         />
         <label>Password</label>
         <input
@@ -86,7 +86,7 @@ const SignUp = (props) => {
           name="password"
           value={password}
           placeholder="Password"
-          onCHange={handleChange}
+          onChange={handleChange}
         />
         <label>Password Confirmation</label>
         <input
@@ -95,7 +95,7 @@ const SignUp = (props) => {
           name="passwordConfirmation"
           value={passwordConfirmation}
           placeholder="Confirm Password"
-          onCHange={handleChange}
+          onChange={handleChange}
         />
         {renderError()}
       </form>
