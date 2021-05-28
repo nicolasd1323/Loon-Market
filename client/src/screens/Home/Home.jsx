@@ -16,12 +16,15 @@ const Home = (props) => {
   return (
     <Layout user={props.user}>
       <div className="home">
-        {vendors.map((vendor) => {
+        {vendors.map((vendor, index) => {    
           return (
+            index < 3 ? 
             <VendorCards
               _id={vendor._id}
               name={vendor.name}
               imgURL={vendor.imgURL}
+              key={index}
+
             />
           );
         })}
