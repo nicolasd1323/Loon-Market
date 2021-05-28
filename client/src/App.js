@@ -47,7 +47,7 @@ const App = () => {
           {user ? <VendorEdit user={user} /> : <Redirect to='/' />}
         </Route>
         <Route exact path="/vendors/:id">
-          <VenderDetail user={user} />
+          <VendorDetail user={user} />
         </Route>
       </Switch>
     </div>
