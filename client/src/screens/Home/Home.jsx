@@ -1,4 +1,4 @@
-ort './Home.css'
+import './Home.css'
 import { Layout, VendorCards } from '../../components'
 
 const Home = (props) => {
