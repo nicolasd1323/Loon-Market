@@ -1,6 +1,6 @@
 import "./SignUp.css";
 import { useState } from "react";
-import { signUp } from "../..services/users";
+import { signUp } from "../../services/users.js";
 import { useHistory } from "react-router-dom";
 
 const SignUp = (props) => {
@@ -10,7 +10,7 @@ const SignUp = (props) => {
     username: "",
     email: "",
     password: "",
-    passwordComfirmation: "",
+    passwordConfirmation: "",
     isError: false,
     errorMsg: "",
   });
@@ -34,7 +34,7 @@ const SignUp = (props) => {
         username: "",
         email: "",
         password: "",
-        passwordComfirmation: "",
+        passwordConfirmation: "",
         isError: true,
         errorMsg: "Sign Up Details Invalid",
       });
@@ -54,7 +54,7 @@ const SignUp = (props) => {
     }
   };
 
-  const { username, email, password, passwordComfirmation } = form;
+  const { username, email, password, passwordConfirmation } = form;
 
   return (
     <div className="form-container">
