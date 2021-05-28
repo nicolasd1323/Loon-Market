@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './VendorDetail.css'
-import { Layout } from '../../components/Layout/Layout'
+import Layout from '../../components/Layout/Layout'
 import { getVendor, deleteVendor } from '../../services/vendors'
 import { useParams, Link } from 'react-router-dom'
 

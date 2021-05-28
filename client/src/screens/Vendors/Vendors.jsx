@@ -1,8 +1,11 @@
 import "./Vendors.css";
 import { getVendors } from "../../services/vendors";
-import { Layout, Vendor, Sort } from "../../vendors";
+import Sort  from "../../components/Sort/Sort";
+import Vendor from "../../components/Vendor/Vendor"
 import { AZ, ZA } from '../../utils/sort';
 import { useEffect, useState } from "react";
+import Layout from '../../components/Layout/Layout'
+
 
 const Vendors = (props) => {
   const [vendors, setVendors] = useState([]);
@@ -16,7 +19,7 @@ const Vendors = (props) => {
       setVendors(allVendors)
       setSearchResult(allVendors)
     }
-    fetchVendors
+    fetchVendors()
   }, [])
 
   const handleSort = (type) => {
