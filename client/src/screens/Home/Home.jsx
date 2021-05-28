@@ -1,7 +1,7 @@
 import "./Home.css";
 import { Layout, VendorCards } from "../../components";
 import { useState, useEffect } from "react";
-import { getVendors } from "../../services/products";
+import { getVendors } from "../../services/vendors";
 
 const Home = (props) => {
   const [vendors, setVendors] = useState([]);
