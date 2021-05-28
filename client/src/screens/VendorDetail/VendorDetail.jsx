@@ -38,12 +38,12 @@ const VendorDetail = (props) => {
             <Link className='edit-button' to={`/vendor/${vendor._id}/edit`}>
               Edit
             </Link>
-            <button
+            <Link to="/vendors"
               className='delete-button'
               onClick={() => deleteVendor(vendor._id)}
             >
               Delete
-            </button>
+              </Link>
           </div>
         </div>
       </div>
