@@ -35,9 +35,6 @@ const VendorDetail = (props) => {
           <div className='description'>{vendor.description}</div>
           <div className='hours'>{vendor.hours}</div>
           <div className='button-container'>
-
-
-
             <Link className='edit-button' to={`/vendor/${vendor._id}/edit`}>
               Edit
             </Link>
