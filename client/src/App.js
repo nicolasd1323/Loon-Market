@@ -43,7 +43,7 @@ const App = () => {
         <Route path="/add-vendor">
           {user ? <VendorCreate user={user} /> : <Redirect to="/sign-up" />}
         </Route>
-        <Route exact path="/vendors/:id/edit">
+        <Route exact path="/vendor/:id/edit">
           {user ? <VendorEdit user={user} /> : <Redirect to='/' />}
         </Route>
         <Route exact path="/vendors/:id">
