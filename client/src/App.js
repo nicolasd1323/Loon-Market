@@ -2,15 +2,12 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Home from './screens/Home/Home'
 import Vendors from './screens/Vendors/Vendors'
-import VendorCreate from './screens/VendorCreate/VendorCreate'
-import VendorEdit from './screens/VendorEdit/VendorEdit'
 import VendorDetail from './screens/VendorDetail/VendorDetail'
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import { verifyUser } from './services/users'
 import SignUp from './screens/SignUp/SignUp'
 import SignIn from './screens/SignIn/SignIn'
 import SignOut from './screens/SignOut/SignOut'
-import Layout from  "./components/Layout/Layout"
 
 const App = () => {
   const [user, setUser] = useState(null)
@@ -22,7 +19,7 @@ const App = () => {
     }
     fetchUser()
   }, [])
-console.log(user)
+
   return (
     <div className="app">
       <Switch>
@@ -42,10 +39,8 @@ console.log(user)
           <Vendors user={user} />
         </Route>
         <Route path="/add-vendor">
-          {/* {user ? <VendorCreate user={user} /> : <Redirect to="/sign-up" />} */}
         </Route>
         <Route exact path="/vendor/:id/edit">
-          {/* {user ? <VendorEdit user={user} /> : <Redirect to='/' />} */}
         </Route>
         <Route exact path="/vendors/:id">
           <VendorDetail user={user}/>

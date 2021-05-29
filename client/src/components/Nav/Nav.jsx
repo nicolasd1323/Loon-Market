@@ -19,7 +19,6 @@ const alwaysOptions = (
     </>
 )
 const Nav = ({ user }) => {
-  console.log(user)
         return (
             <nav>
                 <div className="nav">

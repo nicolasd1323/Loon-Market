@@ -8,8 +8,7 @@ const VendorDetail = (props) => {
   const [vendor, setVendor] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
-  const history = useHistory()
-  console.log(props.user);
+  const history = useHistory();
 
   useEffect(() => {
     const fetchVendor = async () => {
@@ -31,15 +30,15 @@ const VendorDetail = (props) => {
           <Link className="edit-button" to={`/vendor/${vendor._id}/edit`}>
             Edit
           </Link>
-            <button
+          <button
             className="delete-button"
             onClick={() => {
-              deleteVendor(vendor._id)
-              history.push(`/vendors`)
+              deleteVendor(vendor._id);
+              history.push(`/vendors`);
             }}
-              >
+          >
             Delete
-        </button>
+          </button>
         </div>
       )}
     </>

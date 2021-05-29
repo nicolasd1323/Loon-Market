@@ -1,8 +1,6 @@
 import "./Vendor.css";
 import { Link } from "react-router-dom";
 
-//substituted in 'hours' for price
-
 const Vendor = (props) => {
   return (
     <>
