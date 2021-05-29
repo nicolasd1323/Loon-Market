@@ -2,9 +2,12 @@ import "./SignUp.css";
 import { useState } from "react";
 import { signUp } from "../../services/users.js";
 import { useHistory } from "react-router-dom";
+import SignUpModal from "../../components/SignUpModal/SignUpModal"
+import Button from "react-bootstrap/ToggleButton"
 
 const SignUp = (props) => {
   const history = useHistory();
+  const [modalShow, setModalShow] = useState(false);
 
   const [form, setForm] = useState({
     username: '',
@@ -54,53 +57,75 @@ const SignUp = (props) => {
     }
   };
 
-  const { username, email, password, passwordConfirmation } = form;
+  // const { username, email, password, passwordConfirmation } = form;
 
-  return (
-    <div className="form-container">
-      <h3>Sign Up</h3>
+  
+      return (
+        <>
+          <Button
+            className="modal-button"
+            onClick={() => setModalShow()}
+            centered
+          >
+            <h3>Sign Up</h3>
+          </Button>
+        </>
+      );
+      {modalShow && (
+        <SignUpModal modalShow={modalShow} setModalShow={setModalShow} />
+      )}
+    
+  
+ 
 
-      <form onSubmit={onSignUp}>
-        <label>Username</label>
-        <input
-          required
-          type="text"
-          name="username"
-          value={username}
-          placeholder="Enter Username"
-          onChange={handleChange}
-        />
-        <label>Email Address</label>
-        <input
-          required
-          type="email"
-          name="email"
-          value={email}
-          placeholder="Enter Email"
-          onChange={handleChange}
-        />
-        <label>Password</label>
-        <input
-          required
-          type="password"
-          name="password"
-          value={password}
-          placeholder="Password"
-          onChange={handleChange}
-        />
-        <label>Password Confirmation</label>
-        <input
-          required
-          type="password"
-          name="passwordConfirmation"
-          value={passwordConfirmation}
-          placeholder="Confirm Password"
-          onChange={handleChange}
-        />
-        {renderError()}
-      </form>
-    </div>
-  );
+  
+
+
+  // return (
+  //   <div className="form-container">
+  //     <h3>Sign Up</h3>
+
+  //     <form onSubmit={onSignUp}>
+  //       <label>Username</label>
+  //       <input
+  //         required
+  //         type="text"
+  //         name="username"
+  //         value={username}
+  //         placeholder="Enter Username"
+  //         onChange={handleChange}
+  //       />
+  //       <label>Email Address</label>
+  //       <input
+  //         required
+  //         type="email"
+  //         name="email"
+  //         value={email}
+  //         placeholder="Enter Email"
+  //         onChange={handleChange}
+  //       />
+  //       <label>Password</label>
+  //       <input
+  //         required
+  //         type="password"
+  //         name="password"
+  //         value={password}
+  //         placeholder="Password"
+  //         onChange={handleChange}
+  //       />
+  //       <label>Password Confirmation</label>
+  //       <input
+  //         required
+  //         type="password"
+  //         name="passwordConfirmation"
+  //         value={passwordConfirmation}
+  //         placeholder="Confirm Password"
+  //         onChange={handleChange}
+  //       />
+  //       {renderError()}
+  //     </form>
+  //   </div>
+  //);
 };
 
 export default SignUp;
