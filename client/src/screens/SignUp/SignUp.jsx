@@ -7,10 +7,10 @@ const SignUp = (props) => {
   const history = useHistory();
 
   const [form, setForm] = useState({
-    username: '',
-    email: '',
-    password: '',
-    passwordConfirmation: '',
+    username: "",
+    email: "",
+    password: "",
+    passwordConfirmation: "",
     isError: false,
     errorMsg: "Sign Up Details Invalid",
   });
@@ -31,10 +31,10 @@ const SignUp = (props) => {
     } catch (error) {
       console.error(error);
       setForm({
-        username: '',
-        email: '',
-        password: '',
-        passwordConfirmation: '',
+        username: "",
+        email: "",
+        password: "",
+        passwordConfirmation: "",
         isError: true,
         errorMsg: "Sign Up Details Invalid",
       });
@@ -42,7 +42,7 @@ const SignUp = (props) => {
   };
 
   const renderError = () => {
-    const toggleForm = form.isError ? "danger" : ''
+    const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
         <button type="submit" className={toggleForm}>
