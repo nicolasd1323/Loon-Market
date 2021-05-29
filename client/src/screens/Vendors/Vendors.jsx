@@ -12,6 +12,7 @@ const Vendors = (props) => {
   const [searchResult, setSearchResult] = useState([])
   const [applySort, setApplySort] = useState([]);
   const [sortType, setSortType] = useState("name-matching")
+  const {user} = props
 
   useEffect(() => {
     const fetchVendors = async () => {
@@ -49,14 +50,15 @@ const Vendors = (props) => {
     <Layout user={props.user}>
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
       <div className="vendors">
-        {searchResult.map((vendor, index) => {
+        {vendors.map((vendor, index) => {
           return (
             <Vendor
+              vendor={vendor}
             _id={vendor._id}
               name={vendor.name}
               imgURL={vendor.imgURL}
-              description={vendor.description}
               key={index}
+              user={user}
             />
          )
        })} 
@@ -66,4 +68,3 @@ const Vendors = (props) => {
 }
 
 export default Vendors
-

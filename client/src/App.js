@@ -10,6 +10,7 @@ import { verifyUser } from './services/users'
 import SignUp from './screens/SignUp/SignUp'
 import SignIn from './screens/SignIn/SignIn'
 import SignOut from './screens/SignOut/SignOut'
+import Layout from  "./components/Layout/Layout"
 
 const App = () => {
   const [user, setUser] = useState(null)
@@ -21,7 +22,7 @@ const App = () => {
     }
     fetchUser()
   }, [])
-
+console.log(user)
   return (
     <div className="app">
       <Switch>
@@ -41,15 +42,15 @@ const App = () => {
           <Vendors user={user} />
         </Route>
         <Route path="/add-vendor">
-          {user ? <VendorCreate user={user} /> : <Redirect to="/sign-up" />}
+          {/* {user ? <VendorCreate user={user} /> : <Redirect to="/sign-up" />} */}
         </Route>
         <Route exact path="/vendor/:id/edit">
-          {user ? <VendorEdit user={user} /> : <Redirect to='/' />}
+          {/* {user ? <VendorEdit user={user} /> : <Redirect to='/' />} */}
         </Route>
         <Route exact path="/vendors/:id">
-          <VendorDetail user={user} />
+          <VendorDetail user={user}/>
         </Route>
-      </Switch>
+        </Switch>
     </div>
   )
 }
