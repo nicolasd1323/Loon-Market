@@ -2,6 +2,7 @@ import "./Vendors.css";
 import { getVendors } from "../../services/vendors";
 import Sort from "../../components/Sort/Sort";
 import Vendor from "../../components/Vendor/Vendor";
+import VendorCards from "../../components/VendorCards/VendorCards";
 import { AZ, ZA } from "../../utils/sort";
 import { useEffect, useState } from "react";
 import Layout from "../../components/Layout/Layout";
@@ -49,18 +50,7 @@ const Vendors = (props) => {
     <Layout user={props.user}>
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
       <div className="vendors">
-        {vendors.map((vendor, index) => {
-          return (
-            <Vendor
-              vendor={vendor}
-              _id={vendor._id}
-              name={vendor.name}
-              imgURL={vendor.imgURL}
-              key={index}
-              user={user}
-            />
-          );
-        })}
+        <VendorCards />
       </div>
     </Layout>
   );
