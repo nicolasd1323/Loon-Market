@@ -1,40 +1,54 @@
-/* .vendor-card {
-  padding: 0 20px;
+.vendor-card,
+.vendor-card a {
+  width:250px;
+  height: 325px;
+}
+
+.vendor-card {
+  margin: 20px;
+  box-shadow: 3px 3px 3px 1px ;
 }
 
 .card {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   align-items: center;
-  transition: 250ms all;
+  background-color: rbga(93, 34, 26, 0.4);
 }
-
-.card:hover {
-  transform: scale(1.02);
-  opacity: .9;
-}
-
 
 .vendor-card-image {
-  width: 300px;
+  width: 250px;
+  height: 325px;
+  padding: 0;
+  margin: 0;
 }
 
-.vendor-card a {
-  text-decoration: underline;
-  letter-spacing: .7px;
+.card-name-background {
+  text-align: center;
+  background-color: rgba(236, 87, 67, 0.4);
+  width: 250px;
+  margin-top: -48px;
 }
 
-@media (max-width: 500px) {
-  .vendor-card {
-      padding: 10px;
-      padding-bottom: 25px;
-      margin: 10px;
-      margin-top: 0px;
-      padding-top: 0px;
-  }
-  .vendor-card-image {
-      width: 180px;
-      padding: 10px;
-      margin: 4px;
-  }
-} */
+.vendor-card-name,
+.vendor-card-name a {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+p.vendor-card-name {
+  align-content: center;
+}
+
+a.card {
+  border: none;
+}
+
+/*==========================
+  Responsive Design
+==========================*/
+@media screen and (max-width: 670px) {
+
+}
