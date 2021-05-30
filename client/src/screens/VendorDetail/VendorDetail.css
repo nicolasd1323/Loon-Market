@@ -1,8 +1,12 @@
 .vendor-detail {
+  font-family: 'Montserrat';
   display: flex;
   padding: 100px;
   padding-top: 80px;
-  /* background-image: "https://images.unsplash.com/photo-1548870449-569b4a39e9f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1373&q=80"; */
+  background-image: url("https://images.unsplash.com/photo-1548870449-569b4a39e9f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1373&q=80");
+  background-size: cover;
+  overflow: hidden;
+  opacity: 0.95;
 }
 
 .detail {
@@ -15,19 +19,28 @@
   font-size: 64px;
   letter-spacing: 1px;
   padding: 5px;
+
 }
 
 .hours {
-  font-size: 28px;
-}
+  font-size: 21px;
+  display: grid;  
+  grid-row:auto;
+  fill-rule: initial;
 
+  
+}
 .description {
   padding: 10px;
   letter-spacing: .9px;
+  opacity:initial;
+
 }
 
 .vendor-detail-image {
   width: 500px;
   padding: 0 40px;
-}
 
+} 
+
+/* needs work on edit bottom, and hours */
