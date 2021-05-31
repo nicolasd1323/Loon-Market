@@ -44,7 +44,7 @@
 }
 
 .logo:hover {
-  transform: scale(1y.2);
+  transform: scale(1.2);
   transition: all .5s ease-in-out;
   color: rgba(249, 87, 28, 0.6);
   text-decoration: none;
