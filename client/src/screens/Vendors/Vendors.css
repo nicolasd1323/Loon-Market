@@ -1,4 +1,4 @@
-.sort-bar,
+/* .sort-bar,
 .vendors {
   display: flex; 
 }
@@ -17,9 +17,7 @@ select.sort {
 label {
   font-weight: bold;
   padding-right: 1px;
-}
-
-
+} */
 
 .vendors {
   flex-flow: row wrap;
