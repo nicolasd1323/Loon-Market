@@ -1,18 +1,25 @@
 
 
 
- .home {
+ .home-container {
+
+  /* linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+      put 50% white over the original image*/
     background: url(https://images.unsplash.com/photo-1543484623-542877a80db5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80) no-repeat center center fixed; 
-    height: 80vh;
+    background-color: darkolivegreen;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(120%);
   } 
 
-.food-card img{
+  
+
+.food-card {
 /* height: 150px; */
-width: 150px;
-height: 150px;
+/* width: 250px; */
+/* height: auto; */
 }
 
 .homepage-cards {
@@ -20,4 +27,51 @@ height: 150px;
   flex-direction:row;
   align-self: flex-end;
   justify-content: space-around;
+}
+
+.food-card div{
+position:relative;
+width: 200px;
+height: 200px;
+/* vertical-align: middle; */
+border: 10px;
+
+}
+
+.card-1{
+  background-image:url(https://images.unsplash.com/photo-1481070555726-e2fe8357725c?ixid=MnwxMjA3fDB8MHxwaG90[…]fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80);
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-2{
+  background-image:url(https://images.unsplash.com/photo-1541975902628-b157a9411603?ixid=MnwxMjA3fDB8MHxwaG90[…]GVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80);
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-3{
+  background-image:url(https://images.unsplash.com/photo-1532634922-8fe0b757fb13?ixlib=rb-1.2.1&ixid=MnwxMjA3[…]90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1052&q=80);
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.food-content p {
+  width:100%;
+  background-color: orange;
+  opacity: .5;
+  /* justify-content: space-around; */
+  text-align: center;
+
+  margin: 0;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

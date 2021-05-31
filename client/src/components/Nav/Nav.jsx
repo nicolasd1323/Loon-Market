@@ -21,7 +21,7 @@ const alwaysOptions = (
 const Nav = ({ user }) => {
         return (
             <nav>
-                <div className="nav">
+                <div className="container">
                     <NavLink className="logo" to="/">Loon Market</NavLink>
                     <div className="links">
                         {user && <div className="link welcome">Welcome, {user.username}</div>}

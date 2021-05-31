@@ -5,3 +5,21 @@
   flex: 1;
   padding: 20px;
 } */
+
+.footer-container {
+  /* box-sizing: border-box; */
+  /* background-color: pink; */
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  /* display: inline-flexbox; */
+}
+
+.item-2 {
+  /* background-color: "lightblue" */
+  width: 50vw;
+}
+
+.item-1, item-3 {
+  text-align:left;
+}
