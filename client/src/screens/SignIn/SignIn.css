@@ -63,7 +63,7 @@ button {
   width: 50%;
   height: 80%;
   margin: 4em auto;
-  border: 2px solid #b0bec5;
+  border: 2px solid rgba(249, 87, 28, 0.6);
   border-radius: 6px;
   box-shadow: black;
   transition: all 2s ease;
@@ -113,7 +113,7 @@ button {
 }
 
 .form-container form button:hover {
-  box-shadow: 3px 8px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 8px 16px rgba(249, 87, 28, 0.6);
 }
 
 .form-container form a {
@@ -239,7 +239,7 @@ button {
 }
 
 .item-container .item button:hover {
-  background: #e9f0ea;
+  background: rgba(249, 87, 28, 0.6);
   color: #333;
 }
 
@@ -340,3 +340,4 @@ button {
   margin-top: 0.6em;
   color: white;
 }
+
