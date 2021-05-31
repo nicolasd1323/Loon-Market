@@ -15,11 +15,11 @@
   /* display: inline-flexbox; */
 }
 
-.item-2 {
+.footer-item-2 {
   /* background-color: "lightblue" */
   width: 50vw;
 }
 
-.item-1, item-3 {
+.footer-item-1, .footer-item-3 {
   text-align:left;
 }
