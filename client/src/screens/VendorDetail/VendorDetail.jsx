@@ -63,7 +63,7 @@ const VendorDetail = (props) => {
               : unauthenticatedOptions}
           </div>
         </div>
-      </div>
+        </div>
     </Layout>
   );
 };

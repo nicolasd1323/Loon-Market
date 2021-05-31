@@ -5,7 +5,7 @@
 }
 
 .vendor-card {
-  margin: 20px;
+  margin: 50px 60px 15px;
   box-shadow: 3px 3px 3px 1px ;
 }
 
@@ -27,7 +27,7 @@
   text-align: center;
   background-color: rgba(236, 87, 67, 0.4);
   width: 250px;
-  margin-top: -48px;
+  margin-top: -49px;
 }
 
 .vendor-card-name,

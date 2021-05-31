@@ -1,4 +1,3 @@
-import "./SignUp.css";
 import { useState } from "react";
 import { signUp } from "../../services/users.js";
 import { useHistory } from "react-router-dom";

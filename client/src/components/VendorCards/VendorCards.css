@@ -1,15 +1,23 @@
 .current-vendors {
   font-family: "Montserrat", sans-serif;
   height: 80px;
-  margin: 50px 0;
+  margin: 175px 0 0 0;
   padding: 15px 90px 0;
   
 }
+
+.vendor-cards {
+margin: 150px 0;
+  
+}
+
 .cards {
   display: flex; 
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: space-around;
+  
+
 }
 
 
@@ -21,6 +29,11 @@ div.current-vendors h3 {
   text-align: center;
   font-size: 30px;
   width: auto;
+}
+
+.cards {
+  display: flex;
+
 }
 
 }
