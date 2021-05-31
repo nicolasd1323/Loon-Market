@@ -1,7 +1,7 @@
 .vendor-card,
 .vendor-card a {
-  width:250px;
-  height: 325px;
+  width:200px;
+  height: 200px;
 }
 
 .vendor-card {
@@ -17,23 +17,27 @@
 }
 
 .vendor-card-image {
-  width: 250px;
-  height: 325px;
+  width: 200px; 
+  height: 200px;
   padding: 0;
   margin: 0;
+  background-position: center;
+  /* background-size: contain;
+  background-size: cover; */
 }
 
 .card-name-background {
-  text-align: center;
-  background-color: rgba(236, 87, 67, 0.4);
-  width: 250px;
+  text-align: center; 
+  background-color: rgba(249, 87, 28, 0.6);
+  /* background-color: rgba(236, 87, 67, 0.4); */
+  width: 200px;
   margin-top: -49px;
 }
 
 .vendor-card-name,
 .vendor-card-name a {
   font-family: "Montserrat", sans-serif;
-  color: #000000;
+  color: #ffffff;
   font-size: 22px;
   font-weight: bold;
 }
