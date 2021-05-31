@@ -1,7 +1,6 @@
 import "./Vendors.css";
 import { getVendors } from "../../services/vendors";
 import Sort from "../../components/Sort/Sort";
-import Vendor from "../../components/Vendor/Vendor";
 import VendorCards from "../../components/VendorCards/VendorCards";
 import { AZ, ZA } from "../../utils/sort";
 import { useEffect, useState } from "react";
