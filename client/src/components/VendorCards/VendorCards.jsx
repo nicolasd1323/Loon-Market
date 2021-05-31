@@ -17,7 +17,7 @@ const VendorCards = () => {
   const CARDS = vendors
     .reverse()
     .map((vendor, index) =>
-      index < 8 ? (
+      index < 15 ? (
         <VendorCard
           _id={vendor._id}
           name={vendor.name}
