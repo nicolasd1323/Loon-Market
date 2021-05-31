@@ -39,7 +39,16 @@
   flex: 1;
   /* padding-left: 0px; */
 
+
+
 }
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: all .5s ease-in-out;
+  color: rgba(249, 87, 28, 0.6);
+  text-decoration: none;
+  }
 
 .links {
   flex: 1;
@@ -64,6 +73,7 @@
 .link:hover {
   transform: scale(1.25);
   transition: all .5s ease-in-out;
+  color: rgba(249, 87, 28, 0.6);
   }
 
   .logo:visited {

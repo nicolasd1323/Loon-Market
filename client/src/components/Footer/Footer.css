@@ -12,14 +12,17 @@
   width: 100vw;
   display: flex;
   justify-content: space-around;
+  column-gap: 20px;
   /* display: inline-flexbox; */
 }
 
 .footer-item-2 {
   /* background-color: "lightblue" */
   width: 50vw;
+  align-content: center;
 }
 
 .footer-item-1, .footer-item-3 {
+  width: 25vw;
   text-align:left;
 }

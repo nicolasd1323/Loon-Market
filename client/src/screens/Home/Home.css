@@ -20,6 +20,7 @@
 /* height: 150px; */
 /* width: 250px; */
 /* height: auto; */
+border-radius: 6px;
 }
 
 .homepage-cards {
@@ -27,6 +28,9 @@
   flex-direction:row;
   align-self: flex-end;
   justify-content: space-evenly;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
 }
 
 .food-card div{
@@ -35,6 +39,7 @@ width: 200px;
 height: 200px;
 /* vertical-align: middle; */
 border: 10px;
+box-shadow: 3px 3px 3px 1px ;
 
 }
 
