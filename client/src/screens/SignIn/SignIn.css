@@ -12,9 +12,11 @@ button {
   font-size: 1rem;
   padding: 0.6em 1em;
   border-radius: 3px;
-    box-shadow: 2px 4px 10px rgba(25, 251, 0, 0.3);
+  box-shadow: 2px 4px 10px rgba(238, 244, 238, 0.3);
   transition: all 0.3s ease;
+  border: 1px solid black;
 }
+
 
 .navbar {
   background: #0097a7;
@@ -63,7 +65,7 @@ button {
   margin: 4em auto;
   border: 2px solid #b0bec5;
   border-radius: 6px;
-  box-shadow: 2px 4px 10px rgb(0, 255, 17);
+  box-shadow: black;
   transition: all 2s ease;
 }
 
@@ -100,13 +102,13 @@ button {
 }
 
 .form-container form input:valid {
-  border: 2px solid #66bb6a;
+  border: 2px solid #e3ece4;
 }
 
 .form-container form button {
   width: 50%;
   margin: 1em auto;
-  background: #24ea2a;
+  background: transparent;
   border: none;
 }
 
@@ -232,12 +234,12 @@ button {
 }
 
 .item-container .item button {
-  background: #00a719;
+  background: hsl(127, 21%, 93%);
   color: #f8f8f8;
 }
 
 .item-container .item button:hover {
-  background: #56d865;
+  background: #e9f0ea;
   color: #333;
 }
 
@@ -293,7 +295,7 @@ button {
 }
 
 .alert p {
-  color: #388e3c;
+  color: #cae8cc;
   width: 80%;
   margin: auto;
   align-self: center;
