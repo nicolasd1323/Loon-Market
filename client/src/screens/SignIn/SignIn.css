@@ -129,14 +129,14 @@ button {
   flex-direction: column;
   overflow-y: scroll;
   height: Calc(100vh - 4em);
-}
+} */
 
-.layout .content {
+ /* .layout .content {
   display: flex;
   flex-direction: row;
   position: relative;
   flex: 1;
-}
+}  */
 
 .layout .content nav {
   display: flex;
@@ -169,17 +169,17 @@ button {
 
 .layout .content nav a:last-of-type {
   border-bottom: 2px solid #333;
-}
+} */
 
-.layout .content .main {
+ .layout .content .main {
   flex: 3 1;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
-.layout .content .main .item-container {
+ .layout .content .main .item-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
