@@ -2,22 +2,20 @@
   font-family: "Montserrat", sans-serif;
   height: 80px;
   margin: 55px 0 0 0;
-  padding: 15px 90px 0;
+  padding: 15px 55px 0;
   
 }
 
 .vendor-cards {
-margin: 40px 0;
+margin: 40px 0 20px;
   
 }
 
 .cards {
   display: flex; 
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: space-around;
-  
-
 }
 
 
