@@ -5,7 +5,7 @@ const Home = (props) => {
   return (
     <Layout user={props.user}>
       <div className='home home-container'>
-        <h1 className="home-banner-text">The Best of Loon Cove</h1>
+        <h1 className="home-banner-text">Lively. Lavish. Large. Lip-smacking good.</h1>
     
       
       </div>
