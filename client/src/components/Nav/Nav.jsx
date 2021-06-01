@@ -20,16 +20,21 @@ const alwaysOptions = (
 )
 const Nav = ({ user }) => {
         return (
-            <nav>
-                <div className="container">
-                    <NavLink className="logo" to="/">Loon Market</NavLink>
+          <nav>
+            <div className="container">
+              <div className="left-container">
+               
+                <NavLink className="logo" to="/">Loon Market</NavLink>
+              </div>
+              <div className="right-container">
                     <div className="links">
                         {user && <div className="link welcome">Welcome, {user.username}</div>}
                         {alwaysOptions}
                         {user ? authenticatedOptions : unauthenticatedOptions}
                     </div>
-                </div>
-            </nav>
+              </div>
+            </div> 
+          </nav>
         )
 }
 export default Nav

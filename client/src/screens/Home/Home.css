@@ -15,8 +15,8 @@
   } 
 
    .home-banner-text {
-    color: #771100;
-    font-size: clamp(1rem, -0.875rem + 8.333vw, 7rem);
+    color: rgba(249, 87, 28, 1);
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
     margin: auto 0;
 /* to center everything */
     position: absolute;
@@ -43,6 +43,7 @@ border-radius: 6px;
   justify-content: space-evenly;
   margin-top: 10px;
   margin-bottom: 10px;
+  align-items:center;
   
 }
 
@@ -82,15 +83,16 @@ box-shadow: 3px 3px 3px 1px ;
 
 .food-content p {
   width:100%;
-  background-color: orange;
+  color: white;
+  background-color: rgba(249, 87, 28, 0.8);
   opacity: .5;
   /* justify-content: space-around; */
   text-align: center;
 
   margin: 0;
   position: absolute;
-  /* top: 65%; */
-  top: 90%;
+  top: 65%;
+  /* top: 90%; */
   left: 50%;
   transform: translate(-50%, -50%);
 }

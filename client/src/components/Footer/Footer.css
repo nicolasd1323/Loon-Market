@@ -7,9 +7,10 @@
 } */
 
 .footer-container {
+  border-top: 2px;
   /* box-sizing: border-box; */
   /* background-color: pink; */
-  width: 100vw;
+  width: 94vw;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
