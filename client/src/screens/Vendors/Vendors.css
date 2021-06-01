@@ -12,6 +12,8 @@
 
 select.sort {
   font-family: "Montserrat", sans-serif;
+  border: none;
+  margin-top: -7px;
 }
 
 label {
@@ -41,11 +43,12 @@ label {
 ==========================*/
 @media screen and (max-width: 670px) {
 .sort-container {
-  margin: auto;
+  padding-right: 40px;
+  margin: 50px 0 40px 0;
+
  }
+ 
  select.sort {
-  margin-top: -7px;
   font-size: 18px;
-   border: none;
  }
 }
