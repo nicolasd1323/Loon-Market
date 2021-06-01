@@ -8,18 +8,24 @@ div.add-vendor {
   background-size: cover;
   background-position: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 93vh;
   margin: 80px 0;
-}
-.add-vendor-form {
+  }
+
+.add-vendor-form,
+.add-vendor-button-box {
   display: flex;
-  margin: 70px 175px 50px;
-  width: 800px;
+  width: 700px;
   font-family: "Montserrat", sans-serif;
   flex-direction: column;
   justify-content: center;
-  box-shadow: 3px 3px 3px 3px;
+  box-shadow: 3px 3px 3px 1px;
 }
+
+.add-vendor-form {
+  margin: 70px auto 50px;
+}
+
 .add-vendor-name,
 .add-vendor-description,
 .add-vendor-image,
@@ -27,16 +33,31 @@ div.add-vendor {
 .add-vendor-button {
   font-weight: bold;
   color: #000000;
-  padding: 20px;
+  padding: 20px 0;
   font-size: 25px;
   border: none;
   background-color: rgba(255, 255, 255, 0.65);
+}
+
+input.add-vendor-name {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+input.add-vendor-hours {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 
 button.add-vendor-button {
   background: transparent;
   box-shadow: none;
   text-align: left;
+}
+
+.add-vendor-button-box {
+  border-radius: 6px;
+  margin: -22px auto 50px;
 }
 
  /*==========================
@@ -46,5 +67,10 @@ button.add-vendor-button {
   .add-vendor-form{
     width: auto;
     margin: 0 auto;
+  }
+
+  .add-vendor-button-box {
+    display: flex;
+    margin: 15px auto;
   }
 }

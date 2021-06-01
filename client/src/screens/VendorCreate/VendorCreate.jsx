@@ -69,10 +69,12 @@ const VendorCreate = (props) => {
             required
             onChange={handleChange}
           />
-          <button type="submit" className="add-vendor-button">
-            Submit
-          </button>
         </form>
+          <div className="add-vendor-button-box">
+            <button type="submit" className="add-vendor-button">
+              Submit
+            </button>
+          </div>
       </div>
     </Layout>
   );
