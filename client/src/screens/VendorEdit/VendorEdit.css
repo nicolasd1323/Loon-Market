@@ -1,8 +1,10 @@
 .vendor-edit {
   font-family: 'Montserrat';
   display: flex;
-  padding: 100px;
+  /* padding: 100px; */
   padding-top: 80px;
+  justify-content: space-evenly;
+  align-content: center;
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0.55),
