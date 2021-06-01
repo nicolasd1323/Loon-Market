@@ -61,6 +61,7 @@ const VendorEdit = (props) => {
             />
           </form>
         </div>
+        <div className="box-edit">
         <form className='edit-form' onSubmit={handleSubmit}>
           <input
             className='input-name'
@@ -92,7 +93,8 @@ const VendorEdit = (props) => {
           <button type='submit' className='save-button'>
             Save
           </button>
-        </form>
+          </form>
+          </div>
       </div>
     </Layout>
   )
