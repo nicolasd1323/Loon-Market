@@ -4,7 +4,8 @@ import Layout from '../../components/Layout/Layout'
 const Home = (props) => {
   return (
     <Layout user={props.user}>
-      <div  className='home home-container'>
+      <div className='home home-container'>
+        <h1 className="home-banner-text">The Best of Loon Cove</h1>
     
       
       </div>
