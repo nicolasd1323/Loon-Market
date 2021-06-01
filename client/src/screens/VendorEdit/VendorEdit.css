@@ -40,6 +40,7 @@
   flex-flow: column wrap;
   justify-content: space-evenly;
   align-content: center;
+  margin-bottom: 10px;
 }
 
 .input-name {
