@@ -1,4 +1,12 @@
 .layout-children {
   flex: 2;
 }
+.layout {
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ overflow: scroll;
+ padding: 0 auto;
+ margin: 0 auto;
+}
 
