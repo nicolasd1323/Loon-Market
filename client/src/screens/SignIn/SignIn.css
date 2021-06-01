@@ -129,65 +129,10 @@ button {
   flex-direction: column;
   overflow-y: scroll;
   height: Calc(100vh - 4em);
-} */
+} 
 
- /* .layout .content {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  flex: 1;
-}  */
 
-.layout .content nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 0.8 1;
-  z-index: 1000;
-  background:tan;
-  box-shadow: inset -10px 8px 10px -6px rgba(0, 0, 0, 0.3);
-}
-
-.layout .content nav a {
-  text-decoration: none;
-  text-align: center;
-  padding: 1em 0;
-  font-size: 1.1rem;
-  width: 100%;
-  color: #333;
-  transition: all 0.4s ease;
-}
-
-.layout .content nav a:hover {
-  background: #616161;
-  color: #f8f8f8;
-}
-
-.layout .content nav a:first-of-type {
-  border-bottom: 2px solid #333;
-}
-
-.layout .content nav a:last-of-type {
-  border-bottom: 2px solid #333;
-} */
-
- .layout .content .main {
-  flex: 3 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
- .layout .content .main .item-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2em;
-  grid-template-rows: auto;
-  width: 80%;
-  padding: 2em 0;
-}
-
+ 
 .item {
   border: 2px solid #81b9bf;
   text-align: center;
