@@ -11,18 +11,25 @@
   /* background-color: pink; */
   width: 100vw;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-around;
-  column-gap: 20px;
+  column-gap: 5px;
   /* display: inline-flexbox; */
 }
 
 .footer-item-2 {
   /* background-color: "lightblue" */
-  width: 50vw;
+  width: 33vw;
   align-content: center;
 }
 
-.footer-item-1, .footer-item-3 {
-  width: 25vw;
+.footer-item-1 {
+  width: 33vw;
   text-align:left;
+}
+
+.footer-item-3 {
+width:33vw;
+/* justify-content: flex-start; */
+align-items:flex-end
 }
