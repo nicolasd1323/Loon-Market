@@ -95,9 +95,13 @@ a:visited {
     color: black;
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 670px) {
     .links {
       flex-direction:column;
+    }
+    .container {
+      flex-direction: column;
+      justify-content: center;
     }
   }
 
