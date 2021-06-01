@@ -49,10 +49,14 @@ input.add-vendor-hours {
   border-bottom-left-radius: 6px;
 }
 
+.add-vendor-button-box,
+.add-vendor-button {
+  justify-items: flex-start;
+  width: 233px;
+}
 
 
 button.add-vendor-button {
-  /* width: 500px; */
   background: transparent;
   box-shadow: none;
   text-align: left;
@@ -74,15 +78,17 @@ button.add-vendor-button {
   .add-vendor-form{
     width: auto;
     margin: 0 auto;
+    
   }
 
   .add-vendor-description select {
     border: 1px solid #000000;
   }
 
-  textarea.add-vendor-button-box {
+  .add-vendor-button-box {
     width: auto;
     display: flex;
     margin-top: 25px;
+    margin-right: 0;
   }
 }
