@@ -1,0 +1,94 @@
+div.add-vendor {
+   background: linear-gradient(
+  to top,
+  rgba(255, 255, 255, 0.25),
+  rgba(255, 255, 255, 1)
+  ),
+  url(https://images.unsplash.com/photo-1543484623-542877a80db5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80);
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 97vh;
+  margin: 80px 0;
+  }
+
+.add-vendor-form,
+.add-vendor-button-box {
+  display: flex;
+  width: 700px;
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 3px 3px 3px 1px;
+}
+
+.add-vendor-form {
+  margin: 70px auto 50px;
+}
+
+.add-vendor-name,
+.add-vendor-description,
+.add-vendor-image,
+.add-vendor-hours,
+.add-vendor-button {
+  font-weight: bold;
+  color: #000000;
+  padding: 20px 0;
+  font-size: 25px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+
+input.add-vendor-name {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+input.add-vendor-hours {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.add-vendor-button-box,
+.add-vendor-button {
+  justify-items: flex-start;
+  width: 233px;
+}
+
+
+button.add-vendor-button {
+  background: transparent;
+  box-shadow: none;
+  text-align: left;
+}
+
+.add-vendor-button-box {
+  border-radius: 6px;
+  margin: -22px auto 50px;
+}
+
+ /*==========================
+  Responsive Design
+==========================*/
+@media screen and (max-width: 670px) {
+  div.add-vendor{
+    height: auto;
+  }
+  
+  .add-vendor-form{
+    width: auto;
+    margin: 0 auto;
+    
+  }
+
+  .add-vendor-description select {
+    border: 1px solid #000000;
+  }
+
+  .add-vendor-button-box {
+    width: auto;
+    display: flex;
+    margin-top: 25px;
+    margin-right: 0;
+  }
+}

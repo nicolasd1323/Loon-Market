@@ -1,0 +1,73 @@
+.vendor-card,
+.vendor-card a {
+  width:200px;
+  height: 200px;
+}
+
+.vendor-card {
+  margin: 20px 60px 20px;
+  box-shadow: 3px 3px 3px 1px ;
+}
+
+.vendor-card, 
+.vendor-card-image {
+  border-radius: 6px;
+}
+
+.card {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: rbga(93, 34, 26, 0.4);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all .5s ease-in-out;
+  color: rgb(12, 11, 11);
+  text-decoration: none;
+}
+
+.vendor-card-image {
+  width: 200px; 
+  height: 200px;
+  background-position: center;
+  }
+
+.card-name-background {
+  margin: 0;
+  width:100%;
+  text-align: center; 
+  background-color: rgba(249, 87, 28, 0.6);
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.vendor-card-name,
+.vendor-card-name a {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+p.vendor-card-name {
+  align-content: center;
+}
+
+a.card {
+  border: none;  
+}
+
+a.card:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+/*==========================
+  Responsive Design
+==========================*/
+@media screen and (max-width: 670px) {
+
+}

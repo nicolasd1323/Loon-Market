@@ -1,0 +1,189 @@
+.nav{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  /* display: inline-flex;
+  margin: 0;
+  padding: 0;
+  justify-content: left;
+  top: 0;
+  left: 0; */
+   /* justify-content: center; */
+  /* align-items: flex-start; */
+  /* width: 100vw; */
+}
+
+.container {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100vw;
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  /* background:yellowgreen; */
+  z-index: 1; 
+}
+
+.span {
+  
+}
+.left-container {
+  display: flex;
+  flex:1;
+}
+.logo {
+  margin: 0;
+  padding: 0;
+  font-family: "Kaushan Script", cursive;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-size: 48px;
+  display: flex;
+  align-items: left;
+  /* justify-items: flex-start; */
+  /* flex: 3; */
+  /* padding-left: 0px; */
+}
+
+.logo:hover {
+  /* transform: scale(.9);
+  transition: all .5s ease-in-out;
+  color: rgba(249, 87, 28, 0.6); */
+  text-decoration: none;
+  }
+
+.right-container {
+  display:flex;
+  flex: 3;
+  justify-content: flex-end;
+  font-size: 18px;
+  /* justify-content: space-around; */
+}
+
+.links {
+  /* flex: 1; */
+  max-width: 60vw;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  
+  /* display: flex; */
+
+  
+  /* justify-content: flex-end; */
+  
+
+}
+
+.link {
+  /* justify-content: space-around; */
+  /* flex: 1; */
+  /* align-items: right; */
+  padding: 3px;
+  color:black;
+  
+}
+
+.link:hover {
+  transform: scale(1.25);
+  transition: all .5s ease-in-out;
+  color: rgba(249, 87, 28, 0.6);
+  }
+
+a:visited {
+  text-decoration: black;
+}  
+
+  .logo:visited {
+    color: black;
+  }
+
+  @media screen and (max-width: 670px) {
+    .links {
+      flex-direction:column;
+    }
+    .container {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+
+
+/* @import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+
+
+
+
+
+.link,
+body {
+  font-family: "Montserrat", sans-serif;;
+}
+
+
+nav {
+    flex: 1;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    display: flex;
+    padding: 20px 0;
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-top: -2px;
+    box-shadow: 1px 1px 1px .3px #CECECE;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+    letter-spacing: -3px;
+    flex: 1;
+    max-width: 30vw;
+    transition: 250ms all;
+}
+
+.logo:hover {
+    transform: scale(1.004);
+}
+
+
+
+.link {
+    flex: 1;
+}
+
+.welcome {
+    padding: 0 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 500px) {
+    nav {
+        width: 98%;
+    }
+    .logo {
+        max-width: 50%;
+    }
+    .links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 50vw;
+    }
+    .link {
+        padding: 3px;
+    }
+} */
