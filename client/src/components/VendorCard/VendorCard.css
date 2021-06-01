@@ -5,7 +5,7 @@
 }
 
 .vendor-card {
-  margin: 50px 60px 15px;
+  margin: 20px 60px 20px;
   box-shadow: 3px 3px 3px 1px ;
 }
 
@@ -24,8 +24,6 @@
 .vendor-card-image {
   width: 200px; 
   height: 200px;
-  /* padding: 0;
-  margin: 0; */
   background-position: center;
   }
 
