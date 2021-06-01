@@ -63,16 +63,22 @@
   cursor: pointer;
   padding: 2px;
 }
+.save-button:hover{
+  transform: scale(1.2);
+  transition: all .5s ease-in-out;
+  text-decoration: none;
+  color: rgb(12, 11, 11);
+
+}
 @media screen and (max-width: 670px) {
   .vendor-edit {
     font-family: 'Montserrat';
     padding: 100px;
-    background: #7BBDDB;
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
-    align-content: center; 
-  font-size: 22px; }
-  .vendor-detail-image {
+    align-content:stretch;
+   font-size: 22px; }
+ .edit-vendor-image {
     width: 250px;
     height: 200px;
     padding: 0 40px;
