@@ -54,6 +54,7 @@
   display:flex;
   flex: 3;
   justify-content: flex-end;
+  font-size: 18px;
   /* justify-content: space-around; */
 }
 
@@ -62,8 +63,8 @@
   max-width: 60vw;
   align-items: center;
   /* justify-content: space-evenly; */
-  font-size: 18px;
-  display: flex;
+  
+  /* display: flex; */
 
   
   /* justify-content: flex-end; */
