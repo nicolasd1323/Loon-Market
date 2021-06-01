@@ -29,7 +29,8 @@
 
 .home-banner-text{
   color: rgba(249, 87, 28, 1);
-  font-size: 4em;
+  color: rgba(249, 87, 28, 1);
+    font-size: clamp(1rem, -0.875rem + 8.333vw, 3.5rem);
   font-weight: bold;
   font-family: Helvetica;
   position: absolute;
@@ -126,8 +127,14 @@ box-shadow: 3px 3px 3px 1px ;
   transform: translate(-50%, -50%);
 }
 
-/* @media screen and (max-width: 992px) {
+@media screen and (max-width: 670px) {
   .homepage-cards {
     flex-direction:column;
+    
   }
-} */
+
+  .food-card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

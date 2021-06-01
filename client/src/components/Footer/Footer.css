@@ -46,3 +46,15 @@ text-align: center;
 /* justify-content: flex-start; */
 /* align-items:flex-end */
 }
+
+/* @media screen and (max-width: 670px) {
+  .footer-container {
+    flex-direction:column;
+  
+    align-content: center;
+  }
+
+  .footer-item-1{
+    text-align: center;
+  }
+} */
