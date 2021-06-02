@@ -63,7 +63,7 @@
   box-shadow: 2px 2px 10px 2px #CECECE;
   cursor: pointer;
   padding: 2px;
-
+  text-align: center;
 }
 .edit-button:hover{
   transform: scale(1.2);
