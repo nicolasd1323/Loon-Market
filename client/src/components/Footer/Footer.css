@@ -1,8 +1,7 @@
 .footer-container {
   height: 75px;
   border-top: solid black 1px;
-  /* margin: 25px; */
-  padding: 15px;
+  padding-top: 20px; 
   font-size: 10px;
   box-sizing: border-box;
   /* background-color: pink; */
