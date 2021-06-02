@@ -3,6 +3,7 @@
   display: flex;
   padding: 100px;
   padding-top: 80px;
+  height: 85vh;
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0.55),
@@ -44,7 +45,7 @@
 
 .vendor-detail-image {
   width: 500px;
-  height: auto;
+  /* height: auto; */
   padding: 0 40px;
 } 
 .button-container{
@@ -90,18 +91,32 @@
   color: rgb(12, 11, 11);
 
 }
+@media screen and (max-width: 1000px) and (min-width: 671px) {
+   
+  .vendor-detail{
+    width: fit-content;
+
+  }
+}
 
 @media screen and (max-width: 670px) {
   .vendor-detail {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     padding: 100px;
     display: flex;
     flex-wrap: wrap;
-  align-content: center;  }
+    align-content: left;
+    font-size: 20px;
+    height: auto;
+    }
+    .detail{
+      display: flex;
+      flex-flow: wrap row;
+      width: fit-content;
+    }
   .vendor-detail-image {
     width: 350px;
-    height: 200px;
-    padding: 0 40px;
+    margin: 15px;
+    padding: 10px;
   } 
-
 }
