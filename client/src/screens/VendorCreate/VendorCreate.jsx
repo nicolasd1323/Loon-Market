@@ -9,7 +9,7 @@ const VendorCreate = (props) => {
     name: "",
     description: "",
     imgURL: "",
-    price: "",
+    hours: "",
   });
 
   const [isCreated, setCreated] = useState(false);
@@ -69,12 +69,12 @@ const VendorCreate = (props) => {
             required
             onChange={handleChange}
           />
-        </form>
           <div className="add-vendor-button-box">
             <button type="submit" className="add-vendor-button">
               Submit
             </button>
           </div>
+        </form>
       </div>
     </Layout>
   );

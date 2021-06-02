@@ -121,3 +121,8 @@ button {
   margin-top: 0.6em;
   color: white;
 }
+@media screen and (max-width: 670px) {
+    .form-container {
+    width: 90%;
+  }
+}
