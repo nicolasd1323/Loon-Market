@@ -5,11 +5,11 @@ import { getVendors } from '../../services/vendors'
 
 const VendorCards = () => {
   const [vendors, setVendors] = useState([])
-
+  
   useEffect(() => {
     const fetchVendors = async () => {
       const allVendors = await getVendors()
-      setVendors(allVendors)
+      setVendors(allVendors);
     }
     fetchVendors()
   }, [])
@@ -29,7 +29,7 @@ const VendorCards = () => {
 
   return (
     <div className='vendor-cards'>
-      <div className='current-vendors'><h3>Current Vendors</h3></div>
+      {/* <div className='current-vendors'><h3>Current Vendors</h3></div> */}
       <div className='cards'>{CARDS}</div>
     </div>
   )
