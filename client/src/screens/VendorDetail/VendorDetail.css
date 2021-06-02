@@ -91,11 +91,15 @@
   color: rgb(12, 11, 11);
 
 }
-@media screen and (max-width: 1000px) and (min-width: 671px) {
+@media screen and (max-width: 1304px) and (min-width: 671px) {
    
   .vendor-detail{
-    width: fit-content;
-
+    width: fit-content; 
+  }
+  .name {
+    font-size: 40px;
+    letter-spacing: 1px;
+    padding: 5px;
   }
 }
 
@@ -112,6 +116,7 @@
       flex-flow: wrap row;
       width: fit-content;
       padding-top: 20px;
+      margin-bottom: 25px;
     }
   .vendor-detail-image {
     width: 350px;
