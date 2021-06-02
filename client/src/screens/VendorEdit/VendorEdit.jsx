@@ -44,25 +44,12 @@ const VendorEdit = (props) => {
   return (
     <Layout user={props.user}>
       <div className='vendor-edit'>
-        <div className='image-container'>
           <img
             className='edit-vendor-image'
             src={vendor.imgURL}
             alt={vendor.name}
           />
-          <form onSubmit={handleSubmit}>
-            <input
-              className='edit-input-image-link'
-              placeholder='Image Link'
-              value={vendor.imgURL}
-              name='imgURL'
-              required
-              onChange={handleChange}
-            />
-          </form>
-        </div>
-        <div className="box-edit">
-        <form className='edit-form' onSubmit={handleSubmit}>
+        <form className="vendor-form" onSubmit={handleSubmit}>
           <input
             className='input-name'
             placeholder='Name'
@@ -90,12 +77,19 @@ const VendorEdit = (props) => {
             required
             onChange={handleChange}
           />
+          <input
+              className='edit-input-image-link'
+              placeholder='Image Link'
+              value={vendor.imgURL}
+              name='imgURL'
+              required
+              onChange={handleChange}
+            />
           <button type='submit' className='save-button'>
             Save
           </button>
-          </form>
-          </div>
-      </div>
+        </form>
+        </div>
     </Layout>
   )
 }
