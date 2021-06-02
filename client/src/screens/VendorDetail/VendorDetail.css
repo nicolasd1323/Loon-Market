@@ -13,6 +13,7 @@
    background-repeat: no-repeat;
    background-size: cover; 
    box-shadow: 4px 0 4px 2px;
+   margin: 40px 0;
 }
 
 .detail {
@@ -66,7 +67,7 @@
   text-align: center;
 }
 .edit-button:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all .5s ease-in-out;
   color: rgb(12, 11, 11);
   text-decoration: none;
@@ -85,7 +86,7 @@
   margin-left: 15px;
 }
 .delete-button:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all .5s ease-in-out;
   text-decoration: none;
   color: rgb(12, 11, 11);
