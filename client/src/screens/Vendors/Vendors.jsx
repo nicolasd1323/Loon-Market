@@ -36,6 +36,7 @@ const Vendors = (props) => {
       default:
         break;
     }
+    console.log(AZ);
   };
 
   if (applySort) {
