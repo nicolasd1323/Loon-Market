@@ -1,8 +1,4 @@
-
-
-
- .home-container {
-
+.home-container {
   /* linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
       put 50% white over the original image*/
     background: url(https://images.unsplash.com/photo-1543484623-542877a80db5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80) no-repeat center center fixed; 
@@ -57,8 +53,6 @@
   text-align: center;
 }
 
-  
-
 .food-card {
 /* height: 150px; */
 /* width: 250px; */
@@ -71,10 +65,9 @@ border-radius: 6px;
   flex-direction:row;
   /* align-self: flex-end; */
   justify-content: space-around;
-  margin-top: 25px;
-  margin-right: 25px;
+  margin: 25px;
   align-items:center;
-  
+  /* width: 75vw; */
 }
 
 .food-card div{
@@ -87,6 +80,14 @@ box-shadow: 3px 3px 3px 1px ;
 border-radius: 6px;
 
 }
+
+.homepage-cards a{
+  color:black;
+}
+
+/* .food-content div a{
+  color: #000000;
+  } */
 
 .card-1{
   background-image:url(https://images.unsplash.com/photo-1481070555726-e2fe8357725c?ixid=MnwxMjA3fDB8MHxwaG90[…]fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80);
