@@ -81,7 +81,7 @@
   text-decoration: none;
   color: rgb(12, 11, 11);
 }
-@media screen and (max-width: 1000px) and (min-width: 671px) {
+@media screen and (max-width: 1151px) and (min-width: 671px) {
    
     .vendor-edit{
       width: fit-content;
