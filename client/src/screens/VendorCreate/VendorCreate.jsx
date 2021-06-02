@@ -34,7 +34,6 @@ const VendorCreate = (props) => {
   return (
     <Layout user={props.user}>
       <div className="add-vendor">
-        <div className="add-vendor-input">
         <form className="add-vendor-form" onSubmit={handleSubmit}>
           <input
             className="add-vendor-name"
@@ -75,8 +74,7 @@ const VendorCreate = (props) => {
               Submit
             </button>
           </div>
-          </form>
-          </div>
+        </form>
       </div>
     </Layout>
   );
