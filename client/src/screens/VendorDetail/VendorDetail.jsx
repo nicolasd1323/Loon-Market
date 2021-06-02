@@ -55,7 +55,7 @@ const VendorDetail = (props) => {
         />
         <div className="detail">
           <div className="name">{vendor.name}</div>
-          <div className="description">{vendor.description}</div>
+          <div className="description">Detail<br></br>{vendor.description}</div>
           <div className="hours">{vendor.hours}</div>
           <div className="button-container">
             {props.user !== null
