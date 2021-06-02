@@ -129,4 +129,7 @@ border-radius: 6px;
     margin-top: 15px;
     margin-bottom: 15px;
   }
+  .home-banner-text {
+    font-size: 42px;
+  }
 }
