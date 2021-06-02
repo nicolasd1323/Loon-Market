@@ -1,54 +1,54 @@
 import "./Vendors.css";
 import { getVendors } from "../../services/vendors";
-import Sort from "../../components/Sort/Sort";
+// import Sort from "../../components/Sort/Sort";
 import VendorCards from "../../components/VendorCards/VendorCards";
-import { AZ, ZA } from "../../utils/sort";
+// import { AZ, ZA } from "../../utils/sort";
 import { useEffect, useState } from "react";
 import Layout from "../../components/Layout/Layout";
 
 const Vendors = (props) => {
   const [vendors, setVendors] = useState([]);
-  const [searchResult, setSearchResult] = useState([]);
-  const [applySort, setApplySort] = useState([]);
-  const [sortType, setSortType] = useState("name-matching");
+  // const [searchResult, setSearchResult] = useState([]);
+  // const [applySort, setApplySort] = useState([]);
+  // const [sortType, setSortType] = useState("name-matching");
   const { user } = props;
 
   useEffect(() => {
     const fetchVendors = async () => {
       const allVendors = await getVendors();
-      setVendors(allVendors);
-      setSearchResult(allVendors);
+      // setVendors(allVendors);
+      // setSearchResult(allVendors);
     };
     fetchVendors();
   }, []);
 
-  const handleSort = (type) => {
-    if (type !== "" && type !== undefined) {
-      setSortType(type);
-    }
-    switch (type) {
-      case "name-ascending":
-        setSearchResult(AZ(searchResult));
-        break;
-      case "name-descending":
-        setSearchResult(ZA(searchResult));
-        break;
-      default:
-        break;
-    }
-    console.log(AZ);
-  };
+  // const handleSort = (type) => {
+  //   if (type !== "" && type !== undefined) {
+  //     setSortType(type);
+  //   }
+  //   switch (type) {
+  //     case "name-ascending":
+  //       setSearchResult(AZ(searchResult));
+  //       break;
+  //     case "name-descending":
+  //       setSearchResult(ZA(searchResult));
+  //       break;
+  //     default:
+  //       break;
+  //   }
+  //   console.log(AZ);
+  // };
 
-  if (applySort) {
-    handleSort(sortType);
-    setApplySort(false);
-  }
+  // if (applySort) {
+  //   handleSort(sortType);
+  //   setApplySort(false);
+  // }
 
-  const handleSubmit = (event) => event.preventDefault();
+  // const handleSubmit = (event) => event.preventDefault();
 
   return (
     <Layout user={props.user}>
-      <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+      {/* <Sort onSubmit={handleSubmit} handleSort={handleSort} /> */}
       <div className="vendors">
         <VendorCards />
       </div>

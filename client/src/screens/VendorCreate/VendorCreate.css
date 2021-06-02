@@ -39,11 +39,21 @@ div.add-vendor {
   background-color: rgba(255, 255, 255, 0.65);
 }
 
+.add-vendor-name::placeholder,
+.add-vendor-description::placeholder,
+.add-vendor-image::placeholder,
+.add-vendor-hours::placeholder {
+  color: #000000;
+  padding-left: 5px;
+}
+
+.add-vendor-form,
 input.add-vendor-name {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 }
 
+.add-vendor-form,
 input.add-vendor-hours {
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -57,14 +67,19 @@ input.add-vendor-hours {
 
 
 button.add-vendor-button {
-  background: transparent;
+  background-color: rgba(255, 255, 255, 0.65);
+  /* background: transparent; */
   box-shadow: none;
-  text-align: left;
+  text-align: center;
+  border-radius: 6px;
+ 
 }
 
 .add-vendor-button-box {
   border-radius: 6px;
-  margin: -22px auto 50px;
+  /* margin: 15px 5px 2px 0; */
+  margin: 15px auto 0;
+  /* box-shadow: 3px 3px 3px 1px; */
 }
 
  /*==========================
@@ -80,6 +95,15 @@ button.add-vendor-button {
     margin: 0 auto;
     
   }
+
+  .add-vendor-name::placeholder,
+  .add-vendor-description::placeholder,
+  .add-vendor-image::placeholder,
+  .add-vendor-hours::placeholder {
+    color: #000000;
+  }
+
+
 
   .add-vendor-description select {
     border: 1px solid #000000;

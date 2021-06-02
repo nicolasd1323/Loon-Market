@@ -1,8 +1,8 @@
 .vendor-edit {
   font-family: "Montserrat";
   display: flex;
-  /* width: fit-content; */
   justify-content: center;
+  height: 85vh;
   background: linear-gradient(
       to right,
       rgba(255, 255, 255, 0.55),
@@ -16,7 +16,7 @@
 .vendor-form {
   display: flex;
   flex-flow: column;
-  width: fit-content;
+  
 }
 
 .image-container {
@@ -94,13 +94,14 @@
     padding: 100px;
     display: flex;
     flex-wrap: wrap;
-    align-content: stretch;
+    align-content: left;
     font-size: 20px;
+    height: auto;
   }
   .vendor-form {
     display: flex;
     flex-flow: column;
-    width: auto;
+    width: fit-content;
   }
   .edit-vendor-image {
     width: 250px;
@@ -108,13 +109,13 @@
     padding: 0 40px;
   }
   .textarea-description {
-    font-size: 10px;
-    padding: 7px;
+    font-size: 8px;
+    padding: 2px;
     letter-spacing: 0.8px;
     line-height: 1.3;
   }
   .input-name {
-    font-size: 40px;
+    font-size: 20px;
     letter-spacing: 1px;
     padding: 5px;
   }
