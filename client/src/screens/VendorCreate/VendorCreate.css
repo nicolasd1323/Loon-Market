@@ -113,7 +113,7 @@ button.add-vendor-button:hover {
 
   .add-vendor-form {
     width: auto;
-    margin: 0;
+    margin: 5px auto;
   }
   .add-vendor-name,
   .add-vendor-description,
