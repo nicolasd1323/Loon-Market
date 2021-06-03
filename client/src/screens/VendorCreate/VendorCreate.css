@@ -30,14 +30,14 @@ div.add-vendor {
   }
   
   .add-vendor-info {
-    margin: 40px auto 0;
+    margin: 60px auto 0;
     font-size: 28px;
     text-align: center;
     font-weight: bold;
   }   
 
 .add-vendor-form {
-  margin: 40px 60px 0 0;
+  margin: 60px 60px 0 0;
 }
 
 .add-vendor-name,
@@ -106,12 +106,16 @@ button.add-vendor-button {
   Responsive Design
 ==========================*/
 @media screen and (min-width:670px) and (max-width: 920px) {
+  .add-vendor-info,
   .add-vendor-form {
     width: auto;
     margin: 0 auto;
   }
 }
 
+.add-vendor-name {
+  width: auto;
+}
 
 @media screen and (max-width: 670px) {
   .add-vendor-info,

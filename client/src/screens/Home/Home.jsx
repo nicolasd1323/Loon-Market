@@ -20,7 +20,7 @@ const Home = (props) => {
           </div>
           </div>
         </Link>
-        <p className="home-text-descriptions">7 restaurants. 2 bars. And, of course, dessert</p>
+        <p className="home-text-descriptions">Seven restaurants. Two bars. And, of course, dessert.</p>
         <Link to="/vendors">
         
         <div className="food-card card-2">
@@ -30,7 +30,7 @@ const Home = (props) => {
           </div>
         </div>
         </Link>
-                <p className="home-text-descriptions">New vendors welcome. Check in often to view our latest additions.</p>
+                <p className="home-text-descriptions">New vendors welcome as we continue to expand our offerings. Check in often to view our latest additions.</p>
 
         <div className="food-card card-3">
           {/* <img src="https://images.unsplash.com/photo-1532634922-8fe0b757fb13?ixlib=rb-1.2.1&ixid=MnwxMjA3[…]90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1052&q=80"  alt="name" /> */}
