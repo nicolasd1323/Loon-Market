@@ -119,6 +119,7 @@
     display:flex;
     flex-flow: wrap row;
     align-content: flex-start;
+    /* justify-content: center; */
     padding: 100px 205px 200px 20px;
     height: auto;
     }
@@ -130,9 +131,10 @@
       margin-bottom: 25px;
     }
   .vendor-detail-image {
-    width: 350px;
+    width: 300px;
     height: 250px;
-    margin: 10px 10px ;
+    padding: 0 0px;
+    margin: 10px 0px 20px 10px;
   } 
   .title-detail{
     color: transparent;

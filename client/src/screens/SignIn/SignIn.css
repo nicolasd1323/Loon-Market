@@ -3,9 +3,9 @@ button {
   font-size: 1rem;
   padding: 0.6em 1em;
   border-radius: 3px;
-  box-shadow: 2px 4px 10px rgba(238, 244, 238, 0.3);
+  box-shadow: 2px 4px 10px rgba(249, 87, 28, 0.6);
   transition: all 0.3s ease;
-  border: 1px solid black;
+  border: 1px solid rgba(249, 87, 28, 0.6);
 }
 
 .form-container {
@@ -57,8 +57,8 @@ button {
 .form-container form button {
   width: 50%;
   margin: 1em auto;
-  background: transparent;
-  border:black;
+  background: rgba(249, 87, 28, 0.6);
+  border:#0c0c0c99;
 }
 
 .form-container form button:hover {
