@@ -119,12 +119,12 @@ button.add-vendor-button:hover {
   .add-vendor-info,
   div.add-vendor {
     height: auto;
-    width: auto;
+    /* width: auto; */
   }
 
-  .add-vendor-info {
+  /* .add-vendor-info {
     margin-top: 20px;
-  }
+  } */
 
   .add-vendor-form {
     /* width: 90vh; */
@@ -161,7 +161,7 @@ button.add-vendor-button:hover {
     background-color: rgba(249, 87, 28, 0.9);
   }
 
-  .add-vendor-info {
+  /* .add-vendor-info {
     margin: 0 auto;
-  }
+  } */
 }
