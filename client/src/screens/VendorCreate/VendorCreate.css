@@ -12,6 +12,14 @@ div.add-vendor {
   margin: 40px 0;
   }
 
+.add-vendor-info {
+  margin: 40px auto 0;
+  font-size: 28px;
+  text-align: center;
+}   
+
+
+.add-vendor-info,
 .add-vendor-form,
 .add-vendor-button-box {
   display: flex;
@@ -19,7 +27,7 @@ div.add-vendor {
   font-family: "Montserrat", sans-serif;
   flex-direction: column;
   justify-content: center;
-  /* box-shadow: 3px 3px 3px 1px; */
+  /* box-shadow: 3px 3px 3px 1px;     <-- ORIGINAL KEEP*/
 }
 
 .add-vendor-form {
@@ -37,7 +45,7 @@ div.add-vendor {
   color: #000000;
   margin: 5px 0;
   padding: 20px 0;
-  /* font-size: 25px; */
+  /* font-size: 25px;     <-- ORIGINAL KEEP*/
   border: 1px solid #000000;
   background-color: rgba(255, 255, 255, 1);
 }
@@ -69,23 +77,23 @@ input.add-vendor-hours {
   padding-left: 10px;
 }
 
-/* .add-vendor-form,
+/* .add-vendor-form,      <-- ORIGINAL KEEP
 input.add-vendor-name {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
 } */
 
-/* .add-vendor-form {
+/* .add-vendor-form {      <-- ORIGINAL KEEP
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
 } */
 
 .add-vendor-button-box,
 button.add-vendor-button {
-  /* width: 233px;  <-- ORIGINAL KEEP */
-  width: 700px;
+  width: 233px;
+  /* width: 700px;   <-- SHOW TEAM  */
   justify-content: center;
-  /* border-radius: 6px; */
+  /* border-radius: 6px;    <-- ORIGINAL KEEP*/
 }
 
 .add-vendor-button-box {
@@ -112,11 +120,11 @@ button.add-vendor-button {
   div.add-vendor{
     height: auto;
     width: auto;
-    /* border-top-left-radius: 6px;
+    /* border-top-left-radius: 6px;   <-- ORIGINAL KEEP
     border-top-right-radius: 6px; */
   }
   
-  .add-vendor-form{
+  .add-vendor-form {
     width: auto;
     margin: 0 auto;
   }
@@ -144,4 +152,8 @@ button.add-vendor-button {
     margin-bottom: 25px;
     box-shadow: none;
   }
+
+  button.add-vendor-button {
+    background-color: rgba(249, 87, 28, .9);
+   }
 }
