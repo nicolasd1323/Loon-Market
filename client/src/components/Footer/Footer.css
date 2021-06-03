@@ -1,23 +1,27 @@
 .footer-container {
   display: flex;
   flex-flow: column nowrap;
+  
   background: rgba(249, 87, 28, .6);
-  padding: 10px; 
   font-size: 16px;
   border-top: 1px solid black;
   box-sizing: border-box;
   align-items: center;
 }
-
 .footer-item-1{
+  padding: 20px;
   width: 100vw;
   display:flex;
   justify-content: space-evenly;
 }
-
 .footer-address{
+  width: 50vw;
   /* margin-right: 5px; */
   text-align: left;
+}
+.footer-hours{
+  width: 50vw;
+  text-align: right;
 }
 
 @media screen and (max-width: 670px) {
