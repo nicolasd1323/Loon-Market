@@ -113,6 +113,9 @@ button.add-vendor-button {
   }
 }
 
+.add-vendor-name {
+  width: auto;
+}
 
 @media screen and (max-width: 670px) {
   .add-vendor-info,

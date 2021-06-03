@@ -3,12 +3,12 @@
   display: flex; 
 }
 
-.sort-container {
+/* .sort-container {
   margin-top: 35px;
   padding-right: 0px;
   justify-content: flex-end;
   align-content: center;
-}
+} */
 
 select.sort {
   font-family: "Montserrat", sans-serif;
@@ -23,7 +23,8 @@ label {
 }
 
 .vendors {
-  margin: 40px 0 60px 0;
+ margin: 10px;
+  /* margin: 10px 0 60px 0; */
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: space-around;
