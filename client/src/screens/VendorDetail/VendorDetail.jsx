@@ -53,6 +53,7 @@ const VendorDetail = (props) => {
           src={vendor.imgURL}
           alt={vendor.name}
         />
+          {/* <h2 className="title-detail">Detail</h2> */}
         <div className="detail">
           <div className="name">{vendor.name}</div>
           <div className="description">{vendor.description}</div>
