@@ -21,7 +21,6 @@ div.add-vendor {
 .add-vendor-info,
 .add-vendor-form,
 .add-vendor-button-box {
-  /* display: flex; */
   font-family: "Montserrat", sans-serif;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +42,7 @@ div.add-vendor {
   font-weight: bold;
   color: #000000;
   margin: 5px 0;
-  padding: 20px 0;
+  padding: 13px 0;
   border: 1px solid #000000;
   background-color: rgba(255, 255, 255, 1);
 }
@@ -56,7 +55,7 @@ div.add-vendor {
 .add-vendor-image,
 .add-vendor-hours,
 .add-vendor-button {
-  font-size: 15px;
+  font-size: 20px;
   width: 450px;
 }
 .add-vendor-name::placeholder,
@@ -81,7 +80,6 @@ button.add-vendor-button {
 }
 button.add-vendor-button {
   background-color: rgba(249, 87, 28, 0.65);
-  box-shadow: none;
   font-size: 23px;
   text-align: center;
   border: none;
@@ -92,43 +90,24 @@ button.add-vendor-button:hover {
 /*==========================
   Responsive Design
 ==========================*/
-/* @media screen and (min-width: 670px) and (max-width: 920px) {
-  .add-vendor-info,
-  div.add-vendor {
-    height: auto; */
-    /* width: auto; */
-  /* }
-} */
-
 @media screen and (max-width: 670px)  {
-  .add-vendor {
+  div.add-vendor {
     height: auto;
-    display: flex;
-
   }
 
   .add-vendor-info,
-  .add-vendor-form {
-    width: auto;
-    justify-content: center;
-  }
-
-  .add-vendor-form {
-    margin: 5px 0;
-  }
-
+  .add-vendor-form,
   .add-vendor-name,
   .add-vendor-description,
   .add-vendor-image,
   .add-vendor-hours {
-    width: 90vw;
+    width: 85vw;
   }
 
   .add-vendor-button-box,
   button.add-vendor-button {
     margin-top: 25px;
     margin-bottom: 25px;
-    box-shadow: none;
   }
 
   button.add-vendor-button {
