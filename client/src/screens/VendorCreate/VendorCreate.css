@@ -105,17 +105,20 @@ button.add-vendor-button {
     height: auto;
     /* width: auto; */
   }
-  /* .add-vendor-info {
-    margin-top: 20px;
-  .add-vendor-form {
+  
+  .add-vendor-info {
+    padding: 0 10px;
+  }
+  
+    .add-vendor-form {
     width: 90vh;
-    margin: 60px auto 0;
+    margin: 0;
   }
   .add-vendor-name,
   .add-vendor-description,
 .add-vendor-image,
 .add-vendor-hours {
-  /* width: 90vh; */
+  width: 90vh;
 }
   .add-vendor-name::placeholder,
   .add-vendor-description::placeholder,
