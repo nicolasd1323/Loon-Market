@@ -12,13 +12,14 @@
    background-repeat: no-repeat;
    background-size: cover; 
    box-shadow: 4px 2px 4px 2px;
-   margin: 40px 20px 20px 20px;
+   /* margin: 40px 20px 20px 20px; */
 }
 
 .detail {
   display: flex;
+  justify-content: center;
+  margin-left: 20px;
   flex-flow: column;
-  margin: 170px;
   width: 650px;
 }
 
@@ -57,7 +58,7 @@
   width: 400px;
   height:39vh;
   /* padding: 0 40px 5px 40px; */
-  margin: 200px 30px 5px 40px;
+  margin: 230px 30px 5px 40px;
   border-radius: 10px;
 } 
 .button-container{
@@ -136,7 +137,7 @@
     width: 300px;
     height: 250px;
     padding: 0 0px;
-    margin: 10px 0px 20px 10px;
+    margin: auto;
   } 
   .name {
     font-size: 35px;
