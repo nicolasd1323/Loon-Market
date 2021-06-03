@@ -74,8 +74,11 @@
 
 .home-text-descriptions {
   /* background-color: rgba(55.3, 56.9, 55.3, 0.6); */
+  min-width: 200px;
   padding: 15px;
+  margin: 15px;
   width: 20vw;
+  border-bottom: 1px solid black;
 }
 
 .food-card {
@@ -165,5 +168,8 @@ border-radius: 6px;
   }
   .home-banner-text {
     font-size: 24px;
+  }
+  .home-text-descriptions {
+    min-width: 200px;
   }
 }
