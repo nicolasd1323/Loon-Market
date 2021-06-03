@@ -17,8 +17,16 @@
 .vendor-form {
   display: flex;
   flex-flow: column;
-  margin: 40px;
+  margin: 170px;
 }
+.input-name {
+  font-size: 64px;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin: 5px;
+
+}
+
 
 .image-container {
   display: flex;
@@ -28,10 +36,10 @@
 }
 
 .edit-vendor-image {
-  width: 350px;
-  height:36vh;
+  width: 400px;
+  height:39vh;
   /* padding: 0 40px 5px 40px; */
-  margin: 40px 40px 5px 40px;
+  margin: 200px 30px 5px 40px;
   border-radius: 10px;
 }
 .input-hours {
@@ -47,13 +55,6 @@
   font-size: 20px;
 }
 
-.input-name {
-  font-size: 64px;
-  letter-spacing: 1px;
-  padding: 5px;
-  margin: 5px;
-
-}
 
 .textarea-description {
   font-size: 16px;
