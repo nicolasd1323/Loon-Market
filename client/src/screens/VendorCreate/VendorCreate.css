@@ -11,7 +11,7 @@ div.add-vendor {
   height: 84vh;
   margin: 40px 0;
   }
-.add-vendor-input,
+
 .add-vendor-form,
 .add-vendor-button-box {
   display: flex;
@@ -23,8 +23,9 @@ div.add-vendor {
 }
 
 .add-vendor-form {
-  margin: 70px auto 50px;
+  margin: 40px auto;
   box-shadow: 3px 3px 3px 2px;
+  /* box-shadow: 0 5px 5px 2px;   <--SHOW TEAM */
 }
 
 .add-vendor-name,
@@ -34,52 +35,75 @@ div.add-vendor {
 .add-vendor-button {
   font-weight: bold;
   color: #000000;
+  margin: 5px 0;
   padding: 20px 0;
-  font-size: 25px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.65);
+  /* font-size: 25px; */
+  border: 1px solid #000000;
+  background-color: rgba(255, 255, 255, 1);
 }
-input.add-vendor-name,
-input.add-vendor-description,
-input.add-vendor-image,
-input.add-vendor-hours,
+
+.add-vendor-name {
+  font-size: 36px;
+  font-weight: 400px;
+  margin-top: 0;
+}
+
+.add-vendor-description,
+.add-vendor-image,
+.add-vendor-hours,
+.add-vendor-button {
+  font-size: 20px;
+}
+
 .add-vendor-name::placeholder,
 .add-vendor-description::placeholder,
 .add-vendor-image::placeholder,
 .add-vendor-hours::placeholder {
   color: #000000;
-  padding-left: 7px;
 }
 
-.add-vendor-form,
+input.add-vendor-name,
+textarea.add-vendor-description,
+input.add-vendor-image,
+input.add-vendor-hours {
+  padding-left: 10px;
+}
+
+/* .add-vendor-form,
 input.add-vendor-name {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-}
+} */
 
-.add-vendor-form {
-/* input.add-vendor-hours { */
+/* .add-vendor-form {
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
-}
+} */
 
 .add-vendor-button-box,
 button.add-vendor-button {
-  width: 233px;
+  /* width: 233px;  <-- ORIGINAL KEEP */
+  width: 700px;
   justify-content: center;
+  /* border-radius: 6px; */
+}
+
+.add-vendor-button-box {
+  margin: 15px auto 15px;
 }
 
 button.add-vendor-button {
-  background-color: rgba(255, 255, 255, 0.65);
+  /* background-color: rgba(255, 255, 255, 0.65);  <-- ORIGINAL KEEP */
+  background-color: rgba(249, 87, 28, 0.75);
   box-shadow: none;
+  font-size: 23px;
   text-align: center;
-  border-radius: 6px;
+  border: none;
  }
 
-.add-vendor-button-box {
-  border-radius: 6px;
-  margin: 15px auto 15px;
-}
+ button.add-vendor-button:hover {
+  background-color: rgba(249, 87, 28, .9);
+ }
 
  /*==========================
   Responsive Design
