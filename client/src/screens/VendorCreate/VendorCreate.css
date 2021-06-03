@@ -11,7 +11,8 @@ div.add-vendor {
   background-position: center;
   background-repeat: no-repeat;
   height: 85vh;
-  margin: 40px 0;
+  margin: 10px 0;
+  align-content: space-evenly;
   }
   
   .add-vendor-info,
@@ -104,6 +105,14 @@ button.add-vendor-button {
  /*==========================
   Responsive Design
 ==========================*/
+@media screen and (min-width:670px) and (max-width: 920px) {
+  .add-vendor-form {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+
 @media screen and (max-width: 670px) {
   .add-vendor-info,
   div.add-vendor{
