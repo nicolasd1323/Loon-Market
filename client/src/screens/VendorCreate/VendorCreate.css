@@ -23,7 +23,6 @@ div.add-vendor {
   .add-vendor-form,
   .add-vendor-button-box {
     display: flex;
-    /* width: 700px; */
     font-family: "Montserrat", sans-serif;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +36,7 @@ div.add-vendor {
   }   
 
 .add-vendor-form {
-  margin: 40px auto 0;
+  margin: 40px 60px 0 0;
 }
 
 .add-vendor-name,
