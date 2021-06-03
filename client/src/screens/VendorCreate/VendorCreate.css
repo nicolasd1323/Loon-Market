@@ -14,12 +14,10 @@ div.add-vendor {
   margin: 10px 0;
   align-content: space-evenly;
   }
-  
   .add-vendor-info,
   .add-vendor-form {
     width: 450px;
   }
-  
   .add-vendor-info,
   .add-vendor-form,
   .add-vendor-button-box {
@@ -28,18 +26,15 @@ div.add-vendor {
     flex-direction: column;
     justify-content: center;
   }
-  
   .add-vendor-info {
     margin: 60px auto 0;
     font-size: 28px;
     text-align: center;
     font-weight: bold;
   }   
-
 .add-vendor-form {
   margin: 60px 60px 0 0;
 }
-
 .add-vendor-name,
 .add-vendor-description,
 .add-vendor-image,
@@ -52,13 +47,11 @@ div.add-vendor {
   border: 1px solid #000000;
   background-color: rgba(255, 255, 255, 1);
 }
-
 .add-vendor-name {
   font-size: 36px;
   width: 450px;
   margin-top: 0;
 }
-
 .add-vendor-description,
 .add-vendor-image,
 .add-vendor-hours,
@@ -66,31 +59,26 @@ div.add-vendor {
   font-size: 15px;
   width: 450px;
 }
-
 .add-vendor-name::placeholder,
 .add-vendor-description::placeholder,
 .add-vendor-image::placeholder,
 .add-vendor-hours::placeholder {
   color: #000000;
 }
-
 input.add-vendor-name,
 textarea.add-vendor-description,
 input.add-vendor-image,
 input.add-vendor-hours {
   padding-left: 10px;
 }
-
 .add-vendor-button-box,
 button.add-vendor-button {
   width: 225px;
   justify-content: center;
 }
-
 .add-vendor-button-box {
   margin: 15px auto 15px;
 }
-
 button.add-vendor-button {
   background-color: rgba(249, 87, 28, 0.65);
   box-shadow: none;
@@ -98,11 +86,9 @@ button.add-vendor-button {
   text-align: center;
   border: none;
  }
-
  button.add-vendor-button:hover {
   background-color: rgba(249, 87, 28, .9);
  }
-
  /*==========================
   Responsive Design
 ==========================*/
@@ -113,43 +99,33 @@ button.add-vendor-button {
     width: auto;
   }
 }
-
-
-
 @media screen and (max-width: 670px) {
   .add-vendor-info,
   div.add-vendor{
     height: auto;
     /* width: auto; */
   }
-
   /* .add-vendor-info {
     margin-top: 20px;
-
   .add-vendor-form {
     width: 90vh;
     margin: 60px auto 0;
   }
-
   .add-vendor-name,
   .add-vendor-description,
 .add-vendor-image,
 .add-vendor-hours {
   /* width: 90vh; */
 }
-
   .add-vendor-name::placeholder,
   .add-vendor-description::placeholder,
   .add-vendor-image::placeholder,
   .add-vendor-hours::placeholder {
     color: #000000;
   }
-
-
   .add-vendor-description select {
     border: 1px solid #000000;
   }
-
   .add-vendor-button-box,
   button.add-vendor-button {
     /* display: flex; */
@@ -157,7 +133,6 @@ button.add-vendor-button {
     margin-bottom: 25px;
     box-shadow: none;
   }
-
   button.add-vendor-button {
     background-color: rgba(249, 87, 28, .9);
    }
