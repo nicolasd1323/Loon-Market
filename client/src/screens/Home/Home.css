@@ -3,7 +3,8 @@
       put 50% white over the original image*/
     background: url(https://images.unsplash.com/photo-1543484623-542877a80db5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80) no-repeat center center fixed; 
     /* background-color: black; */
-    height: 70vh;
+    height: 100vh;
+    margin-top: 10px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,6 +73,7 @@
 }
 
 .home-text-descriptions {
+  /* background-color: rgba(55.3, 56.9, 55.3, 0.6); */
   padding: 15px;
   width: 20vw;
 }
@@ -95,6 +97,7 @@ width: 200px;
 height: 200px;
 /* vertical-align: middle; */
 border: 10px;
+color:black;
 box-shadow: 3px 3px 3px 1px ;
 border-radius: 6px;
 }
@@ -139,7 +142,14 @@ border-radius: 6px;
   transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 1180px) {
+  .home-banner-text{
+    font-size: 34px;
+  }
+}
+
+
+@media screen and (max-width: 675px) {
 
   .home-container {
     height: 85vh;
@@ -154,6 +164,6 @@ border-radius: 6px;
     margin-bottom: 15px;
   }
   .home-banner-text {
-    font-size: 42px;
+    font-size: 24px;
   }
 }
