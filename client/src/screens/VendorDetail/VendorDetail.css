@@ -1,13 +1,12 @@
 .vendor-detail {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   display: flex;
-  padding: 100px 20px 90px;
-  padding-top: 80px;
+  justify-content: center;
   height: 85vh;
   background: linear-gradient(
     to right,
-    rgba(255, 255, 255, 0.49),
-    rgba(255, 255, 255, 0.49)
+    rgba(255, 255, 255, 0.58),
+    rgba(255, 255, 255, 0.58)
   ),
    url(https://images.unsplash.com/photo-1546195643-70f48f9c5b87?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
    background-repeat: no-repeat;
@@ -18,8 +17,9 @@
 
 .detail {
   display: flex;
-  flex-direction: column;
-  line-height: 1.6;
+  flex-flow: column;
+  margin: 170px;
+  width: 650px;
 }
 
 .name {
@@ -29,34 +29,35 @@
   font-weight: 400;
   color: inherit;
   text-rendering: optimizeLegibility;
-}
-.title-detail{
-  margin: 89px 30px;
-  font-size: 1rem;
-  line-height: 1;
-  color: black;
+  font-weight: bolder;
+
 }
 .hours {
-  font-size: 21px;
+  font-size: 19px;
   display: grid;  
   grid-row:auto;
   fill-rule: initial;
+  font-weight:600;
 
-  
 }
 .description {
-  padding: 10px;
+  padding: 18px 0px 18px;
   letter-spacing: .9px;
   opacity:initial;
-  font-size: 1rem;
+  font-size: 22px;
   line-height: 1.5;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  margin-bottom: 20px;
+  font-weight:600;
+  text-align: justify;
 }
 
 .vendor-detail-image {
-  width: 350px;
-  height:36vh;
+  width: 400px;
+  height:39vh;
   /* padding: 0 40px 5px 40px; */
-  margin: 40px 40px 5px 40px;
+  margin: 200px 30px 5px 40px;
   border-radius: 10px;
 } 
 .button-container{
@@ -116,19 +117,20 @@
 
 @media screen and (max-width: 670px) {
   .vendor-detail {
-    display:flex;
-    flex-flow: wrap row;
-    align-content: flex-start;
-    /* justify-content: center; */
-    padding: 100px 205px 200px 20px;
+    font-family: "Montserrat";
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: left;
+    font-size: 20px;
     height: auto;
     }
     .detail{
       display: flex;
       flex-flow: wrap row;
       width: fit-content;
-      padding-top: 20px;
-      margin-bottom: 25px;
+      padding: 18px;
+      margin: 30px auto 25px;
     }
   .vendor-detail-image {
     width: 300px;
@@ -136,12 +138,6 @@
     padding: 0 0px;
     margin: 10px 0px 20px 10px;
   } 
-  .title-detail{
-    color: transparent;
-    width: 0px;
-    height: 0px;
-    margin: 0 0 0 0;
-  }
   .name {
     font-size: 35px;
     letter-spacing: 1px;

@@ -1,5 +1,6 @@
 div.add-vendor {
   display: flex;
+  flex-flow: column wrap;
   background: linear-gradient(
   to top,
   rgba(255, 255, 255, 0.25),
@@ -7,28 +8,33 @@ div.add-vendor {
   ),
   url(https://images.unsplash.com/photo-1543484623-542877a80db5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80);
   background-size: cover;
-  background-position: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 98vh;
+  height: 85vh;
   margin: 40px 0;
   }
-
-.add-vendor-info {
-  margin: 40px auto 0;
-  font-size: 28px;
-  text-align: center;
-}   
-
-
-.add-vendor-info,
-.add-vendor-form,
-.add-vendor-button-box {
-  display: flex;
-  width: 700px;
-  font-family: "Montserrat", sans-serif;
-  flex-direction: column;
-  justify-content: center;
- }
+  
+  .add-vendor-info,
+  .add-vendor-form {
+    width: 450px;
+  }
+  
+  .add-vendor-info,
+  .add-vendor-form,
+  .add-vendor-button-box {
+    display: flex;
+    /* width: 700px; */
+    font-family: "Montserrat", sans-serif;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .add-vendor-info {
+    margin: 40px auto 0;
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+  }   
 
 .add-vendor-form {
   margin: 40px auto;
@@ -49,7 +55,6 @@ div.add-vendor {
 
 .add-vendor-name {
   font-size: 36px;
-  font-weight: 400px;
   margin-top: 0;
 }
 
@@ -57,7 +62,8 @@ div.add-vendor {
 .add-vendor-image,
 .add-vendor-hours,
 .add-vendor-button {
-  font-size: 20px;
+  font-size: 15px;
+  width: 450px;
 }
 
 .add-vendor-name::placeholder,
@@ -76,8 +82,7 @@ input.add-vendor-hours {
 
 .add-vendor-button-box,
 button.add-vendor-button {
-  width: 233px;
-  /* width: 700px;    */
+  width: 225px;
   justify-content: center;
 }
 
@@ -101,10 +106,10 @@ button.add-vendor-button {
   Responsive Design
 ==========================*/
 @media screen and (max-width: 670px) {
+  .add-vendor-info,
   div.add-vendor{
     height: auto;
     width: auto;
-   
   }
   
   .add-vendor-form {
@@ -119,10 +124,6 @@ button.add-vendor-button {
     color: #000000;
   }
 
-  .add-vendor-hours,
-  .add-vendor-name {
-    border-radius: none;
-  }
 
   .add-vendor-description select {
     border: 1px solid #000000;
@@ -130,7 +131,7 @@ button.add-vendor-button {
 
   .add-vendor-button-box,
   button.add-vendor-button {
-    display: flex;
+    /* display: flex; */
     margin-top: 25px;
     margin-bottom: 25px;
     box-shadow: none;
@@ -138,5 +139,9 @@ button.add-vendor-button {
 
   button.add-vendor-button {
     background-color: rgba(249, 87, 28, .9);
+   }
+
+   .add-vendor-info {
+     margin: 0 auto;
    }
 }
