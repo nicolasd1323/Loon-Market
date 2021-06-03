@@ -21,7 +21,7 @@ div.add-vendor {
 .add-vendor-info,
 .add-vendor-form,
 .add-vendor-button-box {
-  display: flex;
+  /* display: flex; */
   font-family: "Montserrat", sans-serif;
   flex-direction: column;
   justify-content: center;
@@ -101,7 +101,36 @@ button.add-vendor-button:hover {
 } */
 
 @media screen and (max-width: 670px)  {
-  
+  .add-vendor {
+    height: auto;
+    display: flex;
+
+  }
+
+  .add-vendor-info,
+  .add-vendor-form {
+    width: auto;
+    justify-content: center;
+  }
+
+  .add-vendor-form {
+    margin: 5px 0;
+  }
+
+  .add-vendor-name,
+  .add-vendor-description,
+  .add-vendor-image,
+  .add-vendor-hours {
+    width: 90vw;
+  }
+
+  .add-vendor-button-box,
+  button.add-vendor-button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: none;
+  }
+
   button.add-vendor-button {
     background-color: rgba(249, 87, 28, 0.9);
   }
