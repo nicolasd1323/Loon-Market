@@ -8,9 +8,9 @@ div.add-vendor {
   ),
   url(https://images.unsplash.com/photo-1543484623-542877a80db5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1051&q=80);
   background-size: cover;
-  background-position: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 98vh;
+  height: 85vh;
   margin: 40px 0;
   }
   
@@ -63,6 +63,7 @@ div.add-vendor {
 .add-vendor-hours,
 .add-vendor-button {
   font-size: 15px;
+  width: 450px;
 }
 
 .add-vendor-name::placeholder,
@@ -105,6 +106,7 @@ button.add-vendor-button {
   Responsive Design
 ==========================*/
 @media screen and (max-width: 670px) {
+  .add-vendor-info,
   div.add-vendor{
     height: auto;
     width: auto;
