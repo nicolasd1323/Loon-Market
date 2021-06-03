@@ -55,6 +55,7 @@ div.add-vendor {
 
 .add-vendor-name {
   font-size: 36px;
+  width: 450px;
   margin-top: 0;
 }
 
@@ -105,17 +106,11 @@ button.add-vendor-button {
  /*==========================
   Responsive Design
 ==========================*/
-/* @media screen and (min-width:670px) and (max-width: 920px) {
-  .add-vendor-info,
-  .add-vendor-form {
-    width: auto;
-    margin: 0 auto;
-  }
+@media screen and (min-width:670px) and (max-width: 920px) {
+
 }
 
-.add-vendor-name {
-  width: auto;
-} */
+
 
 @media screen and (max-width: 670px) {
   .add-vendor-info,
