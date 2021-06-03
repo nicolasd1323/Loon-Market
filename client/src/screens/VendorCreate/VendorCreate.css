@@ -77,7 +77,6 @@ input.add-vendor-hours {
 .add-vendor-button-box,
 button.add-vendor-button {
   width: 233px;
-  /* width: 700px;    */
   justify-content: center;
 }
 
@@ -104,7 +103,6 @@ button.add-vendor-button {
   div.add-vendor{
     height: auto;
     width: auto;
-   
   }
   
   .add-vendor-form {
@@ -138,5 +136,9 @@ button.add-vendor-button {
 
   button.add-vendor-button {
     background-color: rgba(249, 87, 28, .9);
+   }
+
+   .add-vendor-info {
+     margin: 0 auto;
    }
 }
