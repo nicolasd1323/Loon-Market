@@ -7,14 +7,16 @@
   height: 80px;
   padding: 15px 55px 0;
   font-weight: 500; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   color: white;
   width: 98vw;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   background-color: rgba(55.3, 56.9, 55.3, 0.6);
-  position: absolute;
-  left: 50%;
-  top: 50%;
+ 
+ 
   padding: 15px 0;
   text-align: center;
 }
