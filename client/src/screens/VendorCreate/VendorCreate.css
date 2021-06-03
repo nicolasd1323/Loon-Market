@@ -101,43 +101,7 @@ button.add-vendor-button:hover {
 } */
 
 @media screen and (max-width: 670px)  {
-  .add-vendor-info,
-  div.add-vendor {
-    height: auto;
-    /* width: auto; */
-  }
-
-  .add-vendor-info {
-    padding: 0 10px;
-  }
-
-  .add-vendor-form {
-    width: auto;
-    margin: 5px auto;
-  }
-  .add-vendor-name,
-  .add-vendor-description,
-  .add-vendor-image,
-  .add-vendor-hours {
-    width: 90vw;
-  }
-
-  /* .add-vendor-name::placeholder,
-  .add-vendor-description::placeholder,
-  .add-vendor-image::placeholder,
-  .add-vendor-hours::placeholder {
-    color: #000000;
-  } */
-  .add-vendor-description select {
-    border: 1px solid #000000;
-  }
-  .add-vendor-button-box,
-  button.add-vendor-button {
-    /* display: flex; */
-    margin-top: 25px;
-    margin-bottom: 25px;
-    box-shadow: none;
-  }
+  
   button.add-vendor-button {
     background-color: rgba(249, 87, 28, 0.9);
   }
