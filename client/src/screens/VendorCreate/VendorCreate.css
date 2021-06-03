@@ -25,7 +25,7 @@ div.add-vendor {
   .add-vendor-button-box {
     display: flex;
     font-family: "Montserrat", sans-serif;
-    flex: column;
+    flex-direction: column;
     justify-content: center;
   }
   
@@ -55,6 +55,7 @@ div.add-vendor {
 
 .add-vendor-name {
   font-size: 36px;
+  width: 450px;
   margin-top: 0;
 }
 
@@ -105,13 +106,9 @@ button.add-vendor-button {
  /*==========================
   Responsive Design
 ==========================*/
-/* @media screen and (min-width:670px) and (max-width: 920px) {
-  .add-vendor-info,
-  .add-vendor-form {
-    width: auto;
-    margin: 0 auto;
-  }
-} */
+@media screen and (min-width:670px) and (max-width: 920px) {
+
+}
 
 
 
@@ -120,19 +117,18 @@ button.add-vendor-button {
   div.add-vendor{
     height: auto;
     width: auto;
-    margin-top: 20px;
   }
   
   .add-vendor-form {
-    width: 90vw;
+    width: 90vh;
     margin: 0 auto;
   }
 
-.add-vendor-name,
-.add-vendor-description,
+  .add-vendor-name,
+  .add-vendor-description,
 .add-vendor-image,
 .add-vendor-hours {
-  width: 90vw;
+  width: 90vh;
 }
 
   .add-vendor-name::placeholder,
