@@ -1,9 +1,19 @@
-.current-vendors {
-  font-family: "Montserrat", sans-serif;
+/* .current-vendors {
+  /* font-family: "Montserrat", sans-serif;
   height: 80px;
   padding: 15px 55px 0;
-  font-weight: 500;
-}
+  font-weight: 500; */
+  color: white;
+  width: 98vw;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(55.3, 56.9, 55.3, 0.6);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 15px 0;
+  text-align: center;
+} */
 
 .vendor-cards {
   margin: 40px 0 48px;
@@ -20,11 +30,11 @@
   Responsive Design
 ==========================*/
 @media screen and (max-width: 670px) {
-  div.current-vendors h3 {
+  /* div.current-vendors h3 {
     text-align: center;
     font-size: 30px;
     width: auto;
-  }
+  } */
 
   .cards {
     display: flex;

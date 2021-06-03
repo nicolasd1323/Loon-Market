@@ -50,6 +50,9 @@ const Vendors = (props) => {
     <Layout user={props.user}>
       {/* <Sort onSubmit={handleSubmit} handleSort={handleSort} /> */}
       <div className="vendors">
+      <div className='current-vendors'>
+        <h3>Check out what our current vendors have to offer!</h3>
+      </div>
         <VendorCards />
       </div>
     </Layout>
