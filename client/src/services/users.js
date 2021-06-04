@@ -7,11 +7,11 @@ export const signUp = async (credentials) => {
     localStorage.setItem("token", resp.data.token);
 
     const user = jwtDecode(resp.data.token);
-    return user
+    return user;
   } catch (error) {
-    throw error
+    throw error;
   }
-}
+};
 
 export const signIn = async (credentials) => {
   try {
@@ -19,36 +19,34 @@ export const signIn = async (credentials) => {
     localStorage.setItem("token", resp.data.token);
 
     const user = jwtDecode(resp.data.token);
-    return user
+    return user;
   } catch (error) {
-    throw error
+    throw error;
   }
-}
+};
 
 export const signOut = async () => {
   try {
     localStorage.removeItem("token");
-    return true
+    return true;
   } catch (error) {
-    throw error
+    throw error;
   }
-}
+};
 
 export const changePassword = async (passwords, user) => {
   try {
     const resp = await api.post("/");
-    return resp.data
+    return resp.data;
   } catch (error) {
-    throw error
+    throw error;
   }
-}
-
-  //Able to turn into ternary statment?
+};
 export const verifyUser = async () => {
   const token = localStorage.getItem("token");
-  if (token) {    
+  if (token) {
     const res = await api.get("/verify");
-    return res.data
+    return res.data;
   }
-  return false
-}
+  return false;
+};
