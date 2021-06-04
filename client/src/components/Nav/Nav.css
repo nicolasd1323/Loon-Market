@@ -110,7 +110,7 @@ a:visited {
 }
 @media screen and (max-width: 500px) {
   nav {
-    width: 98%;
+    width: auto;
     padding-bottom: 17px;
   }
   .nav-container {
