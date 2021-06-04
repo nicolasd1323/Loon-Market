@@ -93,22 +93,27 @@ a:visited {
      padding-top: 8 px; 
     }  */
 
+    .nav {
+      padding-bottom: 10px;
+    }
+
     .nav-container {
       /* stack nav contents */
       flex-direction: column;
       align-content: center;
-      padding: 0;
+      border-bottom: none;
       /* justify-content: center; */
     }
     .left-container{
       /* center nav left */
-      justify-content: center;
+      justify-content: flex-start;
       padding-left: 0;
     }
 
     .logo-link{
       /* justify-content: center; */
       align-self: center;
+      line-height: 46px;
     }
     .right-container {
       /* center nav links */
