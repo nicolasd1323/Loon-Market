@@ -10,11 +10,6 @@
   box-shadow: 3px 3px 3px 1px;
 }
 
-.vendor-card,
-.vendor-card-image {
-  border-radius: 6px;
-}
-
 .card {
   display: flex;
   flex-direction: column;
