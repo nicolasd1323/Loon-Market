@@ -44,10 +44,6 @@
   border-top: 1px solid black;
 }
 
-.food-card {
-  border-radius: 6px;
-}
-
 .homepage-cards {
   display: flex;
   flex-direction: row;
@@ -63,7 +59,6 @@
   border: 10px;
   color: black;
   box-shadow: 3px 3px 3px 1px;
-  border-radius: 6px;
 }
 
 .homepage-cards a {
