@@ -6,9 +6,9 @@
 https://loon-market.herokuapp.com/api/vendors
 ## Project Description
 
-Loon Market is based on the recently popularized “food court” concept of dining in which several unique establishments are hosted by one venue which may also supply a bar of their own as well as entertainment (you can visit the Parkville Market in Hartford, CT; the Dairy Market in Charlottesville, VA; Avanti in Denver, CO and Eataly in NYC for some other examples of this model).
+Loon Market is based on the recently popularized “food court” concept of dining in which several unique establishments are hosted by one venue.
 
-Our full stack website provides a queriable database of vendors so that any user can view detailed info about our vendors. User can also sign-up for access privileges to create a new vendor, as well as edit and delete (full CRUD).  
+Our full stack website provides a queriable database of vendors so that any user can view detailed info about our vendors. Users can also sign-up for access privileges to create a new vendor, as well as edit and delete vendors.
 
 
 ## Wireframes
