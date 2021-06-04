@@ -1,7 +1,6 @@
 # Loon-Market
 
-```https://wizardly-newton-41078d.netlify.app/
-```
+https://wizardly-newton-41078d.netlify.app/
 
 
 # Project Overview
