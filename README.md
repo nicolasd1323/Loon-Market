@@ -12,7 +12,10 @@ Our full stack website provides a queriable database of vendors so that any user
 
 
 ## Wireframes
-https://www.figma.com/file/S3vhAeE1g0Qgs17CSBr9yV/Loon-Market?node-id=0%3A1
+Screen Shot 2021-06-04 at 2.11.31 PM
+Screen Shot 2021-06-04 at 2.11.58 PM
+Screen Shot 2021-06-04 at 2.13.05 PM
+Screen Shot 2021-06-04 at 2.13.23 PM
 
 ## Component Hierarchy
 https://whimsical.com/loon-market-Vp1nz8484xYdpgvJ6zQDUW
