@@ -21,7 +21,7 @@ const Home = (props) => {
           </div>
         </Link>
         <p className="home-text-descriptions">
-          Seven restaurants. Two bars. And, of course, dessert.
+          Several restaurants. A brewery. A bar. And, of course, dessert and coffee.
         </p>
         <Link to="/vendors">
           <div className="food-card card-2">
