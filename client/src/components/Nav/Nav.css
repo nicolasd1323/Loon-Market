@@ -106,7 +106,7 @@ a:visited {
       padding-left: 0;
     }
 
-    .logo{
+    .logo-link{
       /* justify-content: center; */
       align-self: center;
     }
@@ -139,7 +139,7 @@ a {
       justify-content:center;
       /* justify-content: center; */
     }
-    .logo {
+    .logo-link {
         max-width: 50%;
     }
     .links {
