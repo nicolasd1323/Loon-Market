@@ -84,6 +84,7 @@ a:visited {
     flex-direction: column;
     align-content: center;
     border-bottom: none;
+    padding: 0 0 20px 0;
   }
   .left-container {
     justify-content: flex-start;
@@ -92,6 +93,7 @@ a:visited {
   .logo-link {
     align-self: center;
     line-height: 46px;
+    padding: 15px 0 0 22px;
   }
   .right-container {
     justify-content: center;
@@ -109,6 +111,7 @@ a:visited {
 @media screen and (max-width: 500px) {
   nav {
     width: 98%;
+    padding-bottom: 17px;
   }
   .nav-container {
     flex-flow: column wrap;
@@ -125,6 +128,7 @@ a:visited {
     align-items: center;
     width: 100%;
     max-width: 50vw;
+    padding: 10px 0 0 15px;
   }
   .link {
     padding: 3px;
