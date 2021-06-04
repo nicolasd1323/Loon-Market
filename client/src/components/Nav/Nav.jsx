@@ -24,7 +24,7 @@ const Nav = ({ user }) => {
             <div className="nav-container">
               <div className="left-container">
                
-                <NavLink className="logo" to="/">Loon Market</NavLink>
+                <NavLink className="logo logo-link" to="/">Loon Market</NavLink>
               </div>
               <div className="right-container">
                     <div className="links">
