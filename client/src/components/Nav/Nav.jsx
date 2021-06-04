@@ -24,11 +24,11 @@ const Nav = ({ user }) => {
             <div className="nav-container">
               <div className="left-container">
                
-                <NavLink className="logo logo-link" to="/">Loon Market</NavLink>
+                <NavLink className="logo-link" to="/">Loon Market</NavLink>
               </div>
               <div className="right-container">
                     <div className="links">
-                        {user && <div className="link welcome"><span>Welcome, {user.username}</span></div>}
+                        {user && <div className="link-welcome"><span className="nav-welcome">Welcome, {user.username}</span></div>}
                         {alwaysOptions}
                         {user ? authenticatedOptions : unauthenticatedOptions}
                     </div>
