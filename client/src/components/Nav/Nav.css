@@ -1,23 +1,20 @@
-nav{
+nav {
   /* margin: 0 0 0 0;
   padding: 0 0 0 0; */
   height: 16vh;
-  background: rgba(249, 87, 28, .6);
+  background: rgba(249, 87, 28, 0.6);
   border-bottom: 1px solid black;
 }
 .nav-container {
-
   /* width: 100vw; */
-  height: 12vh;
+  /* height: 12vh; */
   /* min-height: 125px; */
   /* display: flex; */
-  flex-direction:row;
+  flex-direction: row;
   align-content: center;
 }
 .span {
   /* justify-content: space-around; */
-  
-  
 }
 .left-container {
   /* display: flex;
@@ -25,8 +22,8 @@ nav{
   text-align: left;
   align-content: center;
   padding-left: 15px; */
-   font-size: 48px;
-   font-family: "Kaushan Script", cursive;
+  font-size: 48px;
+  font-family: "Kaushan Script", cursive;
 }
 .logo {
   /* padding: 10px; */
@@ -50,30 +47,29 @@ nav{
   /* display:flex; */
   /* max-width: 60vw; */
   align-items: center;
-  justify-content:flex-end;
+  justify-content: flex-end;
   margin: 12px 7px 0 7px;
 }
 .link {
   /* align-items: right; */
   padding: 10px;
-  color:black;
+  color: black;
 }
 a:hover {
   transform: scale(1.01);
-  transition: all .3s ease-in;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-in;
+  transition: all 0.3s ease-out;
   color: rgba(249, 87, 28, 0.6);
-  }
+}
 a:visited {
   text-decoration: black;
-}  
+}
 a:visited {
-    color: black;
-  }
-  .logo:hover {
+  color: black;
+}
+.logo:hover {
   /* transform: scale(.9);
   transition: all .5s ease-in-out;
   color: rgba(249, 87, 28, 0.6); */
   text-decoration: none;
-  }
-
+}
