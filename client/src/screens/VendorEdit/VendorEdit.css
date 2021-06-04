@@ -95,9 +95,11 @@
     display: flex;
     flex-flow: column;
     margin: 5px 20px auto 20px;
+    justify-content: center;
+
   }
   .edit-vendor-image {
-    width: 350px;
+    /* width: 350px; */
     height: 250px;
     padding: 0 40px;
     margin: 10px;
@@ -122,7 +124,7 @@
   }
   .save-button {
     font-size: 14px;
-    width: 180px;
+    /* width: 180px; */
     margin-left: 5px;
   }
 }
