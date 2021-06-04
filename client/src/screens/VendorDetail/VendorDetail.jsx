@@ -28,7 +28,7 @@ const VendorDetail = (props) => {
       {props.user && (
         <div className="button-container">
           <Link className="edit-button" to={`/vendor/${vendor._id}/edit`}>
-              Edit
+            Edit
           </Link>
           <button
             className="delete-button"
@@ -63,7 +63,7 @@ const VendorDetail = (props) => {
               : unauthenticatedOptions}
           </div>
         </div>
-        </div>
+      </div>
     </Layout>
   );
 };

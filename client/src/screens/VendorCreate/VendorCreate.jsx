@@ -34,9 +34,12 @@ const VendorCreate = (props) => {
   return (
     <Layout user={props.user}>
       <div className="add-vendor">
-      <div className="add-vendor-info">
-        <p>Opening soon? Make sure your place is known. Fill out your establishment's information to get the word out.</p>
-      </div>
+        <div className="add-vendor-info">
+          <p>
+            Opening soon? Make sure your place is known. Fill out your
+            establishment's information to get the word out.
+          </p>
+        </div>
         <form className="add-vendor-form" onSubmit={handleSubmit}>
           <input
             className="add-vendor-name"

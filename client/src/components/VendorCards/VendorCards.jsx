@@ -1,18 +1,18 @@
-import { useState, useEffect } from 'react'
-import './VendorCards.css'
-import VendorCard from '../VendorCard/VendorCard'
-import { getVendors } from '../../services/vendors'
+import { useState, useEffect } from "react";
+import "./VendorCards.css";
+import VendorCard from "../VendorCard/VendorCard";
+import { getVendors } from "../../services/vendors";
 
 const VendorCards = () => {
-  const [vendors, setVendors] = useState([])
-  
+  const [vendors, setVendors] = useState([]);
+
   useEffect(() => {
     const fetchVendors = async () => {
-      const allVendors = await getVendors()
+      const allVendors = await getVendors();
       setVendors(allVendors);
-    }
-    fetchVendors()
-  }, [])
+    };
+    fetchVendors();
+  }, []);
 
   const CARDS = vendors
     .reverse()
@@ -25,14 +25,13 @@ const VendorCards = () => {
           key={index}
         />
       ) : null
-    )
+    );
 
   return (
-    <div className='vendor-cards'>
-      
-      <div className='cards'>{CARDS}</div>
+    <div className="vendor-cards">
+      <div className="cards">{CARDS}</div>
     </div>
-  )
-}
+  );
+};
 
-export default VendorCards
+export default VendorCards;
