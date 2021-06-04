@@ -13,8 +13,8 @@ nav{
   border-bottom: 1px solid black;
   padding-top: 26px;
 }
-.span {
-  /* justify-content: space-around; */
+.nav-welcome {
+  align-content: center;
   
   
 }
