@@ -1,33 +1,37 @@
 nav{
   /* margin: 0 0 0 0;
   padding: 0 0 0 0; */
-  background: rgba(249, 87, 28, .6);
-  height: 16vh;
-  border-bottom: 1px solid black;
   display: flex;
-  flex-flow: row wrap;
-  align-content: center;
+  height: 16vh;
+  width: 100vw;
+  background: rgba(249, 87, 28, .6);
 }
+
 .nav-container {
-  width: 50vw;
-  /* height: 12vh; */
-  /* min-height: 125px;
-  display: flex; */
-  flex-direction:row;
+  /* width: 90vw; */
+  /* min-height: 125px; */
+  /* display: flex; */
+  /* border-bottom: 1px solid black; */
+  flex-wrap: row wrap;
+  /* justify-content: center; */
+  align-content: center;
+  margin: 0 auto;
+}
+
+.left-container {
+  /* display: flex;
+  flex:1; */
+  /* align-content: center; */
+  text-align: left;
+  padding-left: 15px;
+  font-size: 48px;
 }
 .span {
   /* justify-content: space-around; */
   
   
 }
-.left-container {
-  display: flex;
-  flex:1;
-  text-align: left;
-  align-content: center;
-  padding-left: 15px;
-   font-size: 48px;
-}
+
 .logo {
   /* padding: 10px; */
   font-family: "Kaushan Script", cursive;
@@ -36,48 +40,42 @@ nav{
   font-weight: bold;
   letter-spacing: -3px;
 }
+
 .right-container {
   /* display: flex; */
-  flex-direction: row nowrap;
-  flex: 1;
+  flex-direction: row;
+  /* flex: 1; */
   justify-content: space-between;
   align-items: center;
-  /* flex: 1;
-  justify-content: space-between; */
-  /* align-items: center; */
   padding-right: 15px;
   font-size: 18px;
   align-content: center;
-  /* align-content: center; */
 }
+
 .links {
   display:flex;
   /* max-width: 60vw; */
   align-items: right;
   justify-content:space-around;
 }
+
 .link {
   align-items: right;
-  padding: 10px;
-  color:black;
+  /* padding: 10px; */
+  /* color:black; */
 }
+
 a:hover {
   transform: scale(1.01);
   transition: all .3s ease-in;
   transition: all .3s ease-out;
   color: rgba(249, 87, 28, 0.6);
   }
+
 a:visited {
   text-decoration: black;
 }  
+
 a:visited {
     color: black;
   }
-  .logo:hover {
-  /* transform: scale(.9);
-  transition: all .5s ease-in-out;
-  color: rgba(249, 87, 28, 0.6); */
-  text-decoration: none;
-  }
-
-
