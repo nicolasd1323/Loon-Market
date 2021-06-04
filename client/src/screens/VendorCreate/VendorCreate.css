@@ -104,6 +104,10 @@ button.add-vendor-button:hover {
     width: 85vw;
   }
 
+  .add-vendor-form {
+    margin: 60px 0 0;
+  }
+
   .add-vendor-button-box,
   button.add-vendor-button {
     margin-top: 25px;
