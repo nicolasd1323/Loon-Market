@@ -12,14 +12,17 @@ Our full stack website provides a queriable database of vendors so that any user
 
 
 ## Wireframes
-![Screen Shot 2021-06-04 at 2.11.31 PM]
-Screen Shot 2021-06-04 at 2.11.58 PM
-Screen Shot 2021-06-04 at 2.13.05 PM
-Screen Shot 2021-06-04 at 2.13.23 PM
+![image](https://user-images.githubusercontent.com/81534592/120846634-6b143f80-c540-11eb-921b-9f6ed5fd1c63.png)
+![image](https://user-images.githubusercontent.com/81534592/120846655-71a2b700-c540-11eb-9ef9-c93f39c0463b.png)
+![image](https://user-images.githubusercontent.com/81534592/120846671-77989800-c540-11eb-93f6-cb95224d1a77.png)
+![image](https://user-images.githubusercontent.com/81534592/120846688-7e270f80-c540-11eb-9dc4-0fb69a8d076a.png)
+
+
 
 ## Component Hierarchy
 
-![Screen Shot 2021-06-04 at 2 21 12 PM]
+![Screen Shot 2021-06-04 at 2 21 12 PM](https://user-images.githubusercontent.com/81534592/120846576-5637ac00-c540-11eb-90ae-7950b326ba27.png)
+
 
 ## Schema Sample
 
