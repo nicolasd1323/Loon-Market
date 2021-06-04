@@ -13,6 +13,11 @@ nav{
   border-bottom: 1px solid black;
   padding-top: 26px;
 }
+
+.link-welcome {
+  align-content: center;
+}
+
 .nav-welcome {
   align-content: center;
   
