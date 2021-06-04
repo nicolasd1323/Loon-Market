@@ -13,6 +13,12 @@ nav{
   border-bottom: 1px solid black;
   padding-top: 26px;
 }
+
+.link-welcome {
+  align-content: center;
+  padding: 9px 8px 0 0;
+}
+
 .nav-welcome {
   align-content: center;
   
@@ -28,7 +34,7 @@ nav{
 }
 .logo {
   /* padding: 10px; */
-  /* font-family: "Kaushan Script", cursive; */
+  font-family: "Kaushan Script", cursive;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
   /* align-items:  left; */
   font-weight: bold;
