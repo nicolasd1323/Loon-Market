@@ -36,7 +36,7 @@ nav{
   font-weight: bold;
   letter-spacing: -3px;
 }
-div.right-container {
+.right-container {
   /* display: flex; */
   flex-direction: row nowrap;
   flex: 1;
