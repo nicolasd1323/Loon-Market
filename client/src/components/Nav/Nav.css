@@ -15,7 +15,8 @@ nav {
 
 .link-welcome {
   align-content: center;
-  padding: 9px 8px 0 0;
+  padding: 8px 8px 0 0;
+  font-size: 26px;
 }
 
 .nav-welcome {
@@ -99,6 +100,12 @@ a:visited {
     justify-content: center;
     padding-right: 0;
   }
+  .link-welcome {
+    align-content: center;
+    padding: 7px 8px 0 0;
+    font-size: 20px;
+  }
+
   .link,
   body {
     font-family: "Montserrat", sans-serif;
