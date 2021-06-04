@@ -12,14 +12,14 @@
 .home-banner-text {
   color: white;
   width: 100%;
-
-  font-size: 64px;
+  text-align: center;
+  font-size: 80px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 
   background-color: rgba(55.3, 56.9, 55.3, 0.6);
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   position: absolute;
   left: 50%;
   top: 50%;
@@ -108,11 +108,18 @@
 
 @media screen and (max-width: 1180px) {
   .home-banner-text {
-    font-size: 34px;
+    font-size: 60px;
+  }
+  .homepage-cards {
+
+    
   }
 }
 
 @media screen and (max-width: 675px) {
+  .home-banner-text{
+    font-size: 40px;
+  }
   .home-container {
     height: 85vh;
   }

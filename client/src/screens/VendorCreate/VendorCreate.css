@@ -90,7 +90,7 @@ button.add-vendor-button:hover {
 /*==========================
   Responsive Design
 ==========================*/
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 970px) {
   div.add-vendor {
     height: auto;
   }
