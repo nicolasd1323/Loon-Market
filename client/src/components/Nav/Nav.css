@@ -9,7 +9,7 @@ nav{
   align-content: center;
 }
 .nav-container {
-  width: 100vw;
+  width: 50vw;
   /* height: 12vh; */
   /* min-height: 125px;
   display: flex; */
@@ -39,11 +39,15 @@ nav{
 .right-container {
   /* display: flex; */
   flex-direction: row nowrap;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
   /* flex: 1;
   justify-content: space-between; */
   /* align-items: center; */
   padding-right: 15px;
   font-size: 18px;
+  align-content: center;
   /* align-content: center; */
 }
 .links {
