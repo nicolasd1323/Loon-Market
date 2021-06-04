@@ -47,7 +47,6 @@
 
 .vendor-card-name,
 .vendor-card-name a {
-  /* font-family: "Montserrat", sans-serif; */
   color: #ffffff;
   font-size: 28px;
   font-weight: 500;
@@ -69,5 +68,4 @@ a.card:hover {
   Responsive Design
 ==========================*/
 @media screen and (max-width: 670px) {
-
 }

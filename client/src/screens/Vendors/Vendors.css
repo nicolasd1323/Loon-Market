@@ -1,13 +1,8 @@
 .vendors {
-  display: flex; 
+  display: flex;
 }
 
 .current-vendors {
-  /* font-family: "Montserrat", sans-serif;
-  height: 80px;
-  padding: 15px 55px 0;
-  font-weight: 500; */
-  display: flex;
   flex-flow: row wrap;
   justify-content: center;
   color: white;
@@ -27,23 +22,22 @@ label {
 }
 
 .vendors {
- margin: 10px;
-  /* margin: 10px 0 60px 0; */
+  margin: 10px;
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: space-around;
   background: linear-gradient(
-  to right,
-  rgba(255, 255, 255, 0.55),
-  rgba(255, 255, 255, 0.55)
-),
- url(https://images.unsplash.com/photo-1546195643-70f48f9c5b87?ixid=MnwxMjA3fDB8MHxwaG90by1[…]GVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
- background-repeat: no-repeat;
- background-size: cover; 
- box-shadow: 4px 0 4px 2px;
- }
+      to right,
+      rgba(255, 255, 255, 0.55),
+      rgba(255, 255, 255, 0.55)
+    ),
+    url(https://images.unsplash.com/photo-1546195643-70f48f9c5b87?ixid=MnwxMjA3fDB8MHxwaG90by1[…]GVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 4px 0 4px 2px;
+}
 
- /*==========================
+/*==========================
   Responsive Design
 ==========================*/
 @media screen and (max-width: 670px) {
@@ -52,6 +46,4 @@ label {
     font-size: 30px;
     width: auto;
   }
- 
-
 }
