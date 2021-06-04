@@ -10,7 +10,8 @@ nav{
   min-height: 125px;
   display: flex;
   flex-direction:row;
-  border-bottom: 1px solid black;;
+  border-bottom: 1px solid black;
+  padding-top: 26px;
 }
 .span {
   /* justify-content: space-around; */
@@ -27,7 +28,7 @@ nav{
 }
 .logo {
   /* padding: 10px; */
-  font-family: "Kaushan Script", cursive;
+  /* font-family: "Kaushan Script", cursive; */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
   /* align-items:  left; */
   font-weight: bold;
@@ -35,12 +36,13 @@ nav{
 }
 .right-container {
   /* display: flex; */
+  font-family: "Kaushan Script", cursive;
   flex-direction: row nowrap;
   flex: 1;
   justify-content: space-between;
   align-items: center;
-  padding-right: 15px;
-  font-size: 18px;
+  padding: 15px 15px 0 0;
+  font-size: 20px;
   align-content: center;
 }
 .links {
