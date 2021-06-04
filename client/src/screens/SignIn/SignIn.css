@@ -1,8 +1,3 @@
-/* .sign {
- width: 100vw;
- height: 100vh;
-
-} */
 button {
   cursor: pointer;
   font-size: 1rem;
@@ -25,7 +20,6 @@ button {
   border-radius: 6px;
   transition: all 2s ease;
 }
-
 
 .form-container h3 {
   text-align: center;
@@ -63,7 +57,7 @@ button {
   width: 50%;
   margin: 1em auto;
   background: rgba(249, 87, 28, 0.6);
-  border:rgba(12, 12, 12, 0.6);
+  border: rgba(12, 12, 12, 0.6);
 }
 
 .form-container form button:hover {
@@ -127,7 +121,7 @@ button {
   color: white;
 }
 @media screen and (max-width: 670px) {
-    .form-container {
+  .form-container {
     width: 90%;
   }
 }

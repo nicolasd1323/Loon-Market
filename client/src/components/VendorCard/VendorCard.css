@@ -1,43 +1,43 @@
 .vendor-card,
 .vendor-card a {
-  width:200px;
+  width: 200px;
   height: 200px;
   font-family: "Montserrat", sans-serif;
 }
 
 .vendor-card {
   margin: 20px 60px 35px;
-  box-shadow: 3px 3px 3px 1px ;
+  box-shadow: 3px 3px 3px 1px;
 }
 
-.vendor-card, 
+.vendor-card,
 .vendor-card-image {
   border-radius: 6px;
 }
 
 .card {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
 }
 
 .card:hover {
   transform: scale(1.05);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   color: rgb(12, 11, 11);
   text-decoration: none;
 }
 
 .vendor-card-image {
-  width: 200px; 
+  width: 200px;
   height: 200px;
   background-position: center;
-  }
+}
 
 .card-name-background {
   margin: 0;
-  width:100%;
-  text-align: center; 
+  width: 100%;
+  text-align: center;
   background-color: rgba(249, 87, 28, 0.6);
   position: absolute;
   top: 65%;
@@ -57,7 +57,7 @@ p.vendor-card-name {
 }
 
 a.card {
-  border: none;  
+  border: none;
 }
 
 a.card:hover {
